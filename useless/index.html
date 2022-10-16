@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Website</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <style>     body {
+        background-color: #000000;
+        font-family: sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+    .headline {
+        color: lightblue;
+        font-size: 3em;
+    }
+    .button {
+        background-color: #00c3ff;
+        color: #000000;
+        font-size: 2em;
+        border-radius: 10px;
+        border: 2px solid #000000;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .button:hover {
+        background-color: #00f7ff;
+        color: #000000;
+    }
+    .back {
+        background-color: #00c3ff;
+        color: #000000;
+        font-size: 2em;
+        border-radius: 10px;
+        border: 2px solid #000000;
+        padding: 10px;
+        margin-top: 20px;
+        /*place it on the top left:*/
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+    }
+    .back:hover {
+        background-color: #00f7ff;
+        color: #000000;
+    }
+    /*style the table*/
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        /*center the table*/
+        margin: 0 auto;
+    }
+    /*style the table headings*/
+    th {
+        background-color: #00c3ff;
+        color: #000000;
+        text-align: left;
+        padding: 10px;
+        font-size: 1.5em;
+    }
+    /*style the table data*/
+    td {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .msg {
+        color: #000000;
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+
+</style>
+<p><a href="..">
+    <button class="back">
+      Back to home page
+    </button>
+  </a></p>
+
+    <!--button in the center-->
+    <button class="button" onclick=useless()>Press the button to get a useless message</button>
+ 
+</body>
+</html>
