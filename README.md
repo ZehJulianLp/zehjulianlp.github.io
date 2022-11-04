@@ -1,3 +1,3 @@
 # zehjulianlp.github.io
 
-My Website with my porjecs.
+My Website with my projects.
