@@ -6,88 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Page</title>
     <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <script>
-        function getFreeVBucks() {
-            //embed youtube video with i frame and pop up on the page
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1');
-            iframe.setAttribute('width', '640');
-            iframe.setAttribute('height', '360');
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allowfullscreen', '1');
-            iframe.setAttribute('allow', 'autoplay');
-            document.body.appendChild(iframe);
-        }
-    </script>
-    <style>
-        body {
-            background-color: #000000;
-            font-family: sans-serif;
-            color: #ffffff;
-            text-align: center;
-        }
-        .headline {
-            color: lightblue;
-            font-size: 3em;
-        }
-        .button {
-            background-color: #00c3ff;
-            color: #000000;
-            font-size: 2em;
-            border-radius: 10px;
-            border: 2px solid #000000;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .button:hover {
-            background-color: #00f7ff;
-            color: #000000;
-        }
-        .back {
-            background-color: #00c3ff;
-            color: #000000;
-            font-size: 2em;
-            border-radius: 10px;
-            border: 2px solid #000000;
-            padding: 10px;
-            margin-top: 20px;
-            /*place it on the top left:*/
-            position: absolute;
-            top: 20px;
-            left: 20px;
-
-        }
-        .back:hover {
-            background-color: #00f7ff;
-            color: #000000;
-        }
-        /*style the table*/
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            /*center the table*/
-            margin: 0 auto;
-        }
-        /*style the table headings*/
-        th {
-            background-color: #00c3ff;
-            color: #000000;
-            text-align: left;
-            padding: 10px;
-            font-size: 1.5em;
-        }
-        /*style the table data*/
-        td {
-            border: 1px solid #000000;
-            text-align: left;
-            padding: 10px;
-            font-size: 1.3em;
-        }
-
-    </style>
-    <!--top left button that leads to the home page-->
     <a href="..">
         <button class="back">
             Back to home page

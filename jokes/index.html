@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Joke Website</title>
   <link rel="icon" href="../img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <!--make a back button and place it on the top left of the site-->
@@ -14,111 +16,11 @@
       Back to home page
     </button>
   </a></p>
-
-  <!--get a joke from here: https://icanhazdadjoke.com/ and display it in javascript-->
-  <script>
-    //get a joke from the API
-    function getJoke() {
-      //get the joke from the API
-      fetch('https://icanhazdadjoke.com/', {
-        headers: {
-          Accept: 'application/json'
-        }
-      })
-      //convert the response to json
-      .then(response => response.json())
-      //display the joke
-      .then(data => {
-        document.getElementById('joke').innerHTML = data.joke;
-      })
-      //catch any errors
-      .catch(error => {
-        console.log(error);
-      });
-    }
-    //call the function when the page loads
-    window.onload = getJoke;
-    
-  function getFreeVBucks() {
-    //rickroll the user with a youtube video in another window
-    window.open('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1');
-
-  }
-
-
-  </script>
-  </script>
-  <!--style all-->
-  <style>
-    body {
-      background-color: #000000;
-      font-family: sans-serif;
-      color: #ffffff;
-      text-align: center;
-    }
-    .joke {
-      color: #ffffff;
-      font-size: 2em;
-      text-align: center;
-      margin-top: 20px;
-    
-    }
-    .headline {
-      color: #ffffff;
-      font-size: 4em;
-      text-align: center;
-      margin-top: 300px;
-      /*make a background color*/
-      background-color: #00c3ff;
-      /*make a crate*/
-      border-radius: 100px;
-    }
-    .button {
-      background-color: #00c3ff;
-      color: #000000;
-      font-size: 2em;
-      border-radius: 10px;
-      border: 2px solid #000000;
-      padding: 10px;
-      margin-top: 20px;
-    }
-    .button:hover {
-      background-color: #00f7ff;
-      color: #000000;
-
-    }
-    .back {
-      background-color: #00c3ff;
-      color: #000000;
-      font-size: 2em;
-      border-radius: 10px;
-      border: 2px solid #000000;
-      padding: 10px;
-      margin-top: 20px;
-      /*place it on the top left of the site*/
-      position: absolute;
-      top: 20px;
-      left: 20px;
-
-    }
-    .back:hover {
-      background-color: #00f7ff;
-      color: #000000;
-
-    }
-  </style>
   <h1 class="headline" onclick="getFreeVBucks();">Random Joke Website</h1>
   <p class="joke", id="joke"></p>
   <!-- add refresh button in javascript and diplay it and give it style-->
   <button onclick="window.location.reload()", class="button">New Joke</button>
   <!-- button to read the joke with tts-->
   <button onclick="readJoke()", class="button">Read Joke</button>
-  <script>
-    function readJoke() {
-      var joke = document.getElementById('joke').innerHTML;
-      var utterance = new SpeechSynthesisUtterance(joke);
-      window.speechSynthesis.speak(utterance);
-    }
-  </script>
 </body>
 </html>
