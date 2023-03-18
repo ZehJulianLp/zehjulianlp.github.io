@@ -26,7 +26,8 @@ function getJoke() {
   
 }
 function readJoke() {
-    var joke = document.getElementById('joke').innerHTML;
-    var utterance = new SpeechSynthesisUtterance(joke);
-    window.speechSynthesis.speak(utterance);
+  var joke = document.getElementById('joke').innerHTML;
+  var utterance = new SpeechSynthesisUtterance(joke);
+  utterance.lang = 'en-US'; // specify the language code
+  window.speechSynthesis.speak(utterance);
 }
