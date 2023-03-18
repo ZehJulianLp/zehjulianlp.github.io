@@ -9,8 +9,8 @@ function useless() {
 }
 
 function readText() {
-    //read the text with the help of the speech synthesis API
+    // read the text with the help of the speech synthesis API
     var msg = new SpeechSynthesisUtterance(document.querySelector(".msg").innerText);
-    msg.lang = 'en-US'; // specify the language code
+    msg.lang = 'en-US'; // set language to English
     window.speechSynthesis.speak(msg);
 }
