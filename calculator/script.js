@@ -25,3 +25,10 @@ function deleteLast() {
 function getFreeVBucks() {
   window.open('https://youtu.be/dBv9BMSPaA8?t=24');
   }
+
+function clearAll() {
+  let container = document.getElementById("result");
+  let erg = eval(container.innerHTML)
+  erg = ""
+  container.innerHTML = erg;
+}
