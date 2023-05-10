@@ -1,8 +1,8 @@
 const synth = window.speechSynthesis;
 
-const inputForm = document.querySelector("#input-form");
-const inputTxt = document.querySelector("#text-input");
-const voiceSelect = document.querySelector("#voice-select");
+const inputForm = document.getElementById("input-form");
+const inputTxt = document.getElementById("text-input"); // Update ID to "text-input"
+const voiceSelect = document.getElementById("voice-select");
 
 let voices = [];
 
@@ -20,6 +20,8 @@ function populateVoiceList() {
 
 if (synth.onvoiceschanged !== undefined) {
   synth.onvoiceschanged = populateVoiceList;
+} else {
+  populateVoiceList();
 }
 
 inputForm.addEventListener("submit", (event) => {
@@ -30,10 +32,9 @@ inputForm.addEventListener("submit", (event) => {
   for (let i = 0; i < voices.length; i++) {
     if (voices[i].name === selectedOption) {
       utterThis.voice = voices[i];
+      break;
     }
   }
   synth.speak(utterThis);
   inputTxt.blur();
 });
-
-populateVoiceList();
