@@ -1,0 +1,32 @@
+[
+    {
+        "title": "MCTorn",
+        "description": "MCTorn is a Minecraft MMORPG by me and some friends. We are working since 2020 on it and we are writing the project in Kotlin. If you want to know more about it, you can visit the website. We are also looking for developers, so if you are interested, you can contact me or apply on the website. Have fun!",
+        "image": "../img/tornlogo.png",
+        "link": "https://sites.google.com/view/mctorn"
+    },
+    {
+        "title": "RedstoneWorld",
+        "description": "The RedstoneWorld is a map for single or multiplayer. It is a map with a lot of redstone contraptions and command blocks. You can download the map and play it with your friends. The map is in german, but you can also play it if you don't speak german. The map is for Minecraft 1.20.1. Have fun!",
+        "image": "../img/Redstone.png",
+        "link": "https://drive.google.com/file/d/1fTWLwTe2-D-JJHkwTvT-yHRRK-X57gfi/view"
+    },
+    {
+        "title": "Minigames Server",
+        "description": "The Minigames Server is a server with a lot of minigames only made with commands in Minecraft. You can play the minigames with your friends. The server is in german, but you can also play it if you don't speak german. The server is for Minecraft 1.20.1 or higher. Have fun!",
+        "image": "../img/commandblock.png",
+        "link": "https://sites.google.com/view/zehjulianlp-minigames/startseite"
+    },
+    {
+        "title": "Dwarslooper Pappaufsteller Website",
+        "description": "The Dwarslooper Pappaufsteller Website is a joke website where you can buy cardboard cutouts of Dwarslooper. Dwars is a friend of mine and he is active on Discord. He is making videos about Minecraft on YouTube. If you want to buy a cardboard cutout of him, you can visit the website. The website is in german. Have fun!",
+        "image": "https://mc-heads.net/avatar/9c30500960074294ac0044357d52cae3",
+        "link": "https://dwarslooper-pappaufsteller.store/"
+    },
+    {
+        "title": "Github Projects",
+        "description": "On my Github account, I have some projects. There are for example datapacks and python scripts. You can visit my Github account and see my projects.",
+        "image": "../img/gitlogo.png",
+        "link": "https://github.com/ZehJulianLp"
+    }
+]

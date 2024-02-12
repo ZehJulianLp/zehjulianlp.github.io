@@ -2,63 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZehJulian Lp-Site</title>
-    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css">
+    <title>Julian's corner</title>
+    <link rel="icon" href="img/logo.png">
 </head>
 <body>
-    <a href="https://youtube.com/c/ZehJulianLp"><img src="img/logo.png" alt="Logo" class="logo" ></a>
-    <h1 class="headline">Welcome to my Website!</h1>
-    <hr class="line">
-     <a href="about/">
-        <button class="button-red">
-            About me
-        </button>
-    </a>
-    <br>
-    <br>
-    <hr class="line">
-    <a href="jokes/">
-        <button class="button">
-            Random Joke Generator
-        </button>
-    </a>
-    <!--create a link to the download site-->
-    <a href="downloads/">
-        <button class="button">
-            Download Page
-        </button>
-    </a>
-    <!--create a link that leads to the calculator-->
-    <a href="calculator/">
-        <button class="button">
-            Calculator
-        </button>
-    </a>
-    <!--create a link to the recipe site-->
-    <a href="recipe/">
-        <button class="button">
-            Recipe Browser
-        </button>
-    <!---create a link to a no sence site-->
-    <a href="useless/">
-        <button class="button">
-            Useless Site
-        </button>
-        <a href="ttsgen/">
-            <button class="button">
-                Text to speech generator
-            </button>
-        <footer>
-            <div class="footer-container">
-                  <a href="https://www.twitch.tv/zehjulian_lp" target="_blank"><img src="/img/twitch.png" alt="Twitch logo" class="footer-img"></a>
-                  <a href="https://www.youtube.com/c/zehjulianlp" target="_blank"><img src="/img/yt.png" alt="YouTube logo" class="footer-img"></a>
-                  <a href="https://twitter.com/ZehJulian_Lp" target="_blank"><img src="/img/twitter.png" alt="Twitter logo" class="footer-img"></a>
-                  <a href="https://github.com/ZehJulianLp" target="_blank"><img src="/img/github.png" alt="GitHub logo" class="footer-img"></a>
-                  <a href="https://discord.gg/SxW8EuhW4t" target="_blank"><img src="/img/discord.png" alt="Discord logo" class="footer-img"></a>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://www.deviantart.com/emeraldturtle75">
+            <img src="img/logo.png" alt="logo", width="100px">
+        </a>
+
+        </div>
+        <div class="nav">
+            <div class="navitem selected">
+                <a href="#">Home</a>
             </div>
-        </footer>
+            <div class="navitem">
+                <a href="/about/">About Me</a>
+            </div>
+            <div class="navitem">
+                <a href="/projects/">Projects</a>
+            </div>
+            <div class="navitem">
+            <a href="/socials/">Social Media</a>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Julian's corner in the internet</h1>
+    </div>
+    <div class="contentbox">
+        <p id="age" class="bigtext"></p>
+        <p class="bigtext">Owner of MCTorn, Software Developer, Dragon</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
