@@ -104,10 +104,48 @@ body {
     border-style: solid;
     border-color: #b39797;
     border-width: 2px;
+    text-align: center;
 }
+
 .contentbox:hover {
     background-color: #294e44;
     transition: background-color 0.15s ease;
+}
+
+.contentbox-social {
+    background-color: #202224;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    border-style: solid;
+    border-color: #b39797;
+    border-width: 2px;
+    position: relative; /* Relative Position für absolute Positionierung des Textes */
+}
+
+.social-container {
+    text-align: center; /* Zentrieren der Sozialmedien-Icons */
+}
+
+.social-container a {
+    display: inline-block; /* Anker als Inline-Block-Elemente anzeigen */
+    margin: 0 5px; /* Horizontaler Abstand zwischen den Icons */
+}
+
+.social-icon {
+    width: 50px; /* Breite des Icons */
+    height: auto; /* Automatische Höhe */
+    fill: #DD6C2F; /* Füllfarbe des Icons */
+}
+
+.contentbox-social:hover {
+    background-color: #294e44;
+    transition: background-color 0.15s ease;
+}
+
+.social-container a:hover {
+    transform: scale(1.25);
+    transition: transform 0.15s ease;
 }
 
 .logo:hover {
