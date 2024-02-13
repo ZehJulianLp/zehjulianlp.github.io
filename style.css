@@ -199,6 +199,8 @@ body {
 .project a:hover {
     background-color: #DD6C2F;
     color: #FFF;
+    transform: scale(1.25);
+    transition: transform 0.15s ease;
 }
 
 .project:hover {
