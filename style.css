@@ -153,6 +153,32 @@ body {
     position: relative; /* Relative Position für absolute Positionierung des Textes */
 }
 
+.contentbox a {
+    color: #dd6c2f;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contentbox h2 {
+    color: #ff7e75;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.contentbox a:hover {
+    color: #ff7e75;
+}
+
+.wrong img {
+    /*stretched wide image*/
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    border-radius: 2rem;
+}
+
 .social-container {
     text-align: center; /* Zentrieren der Sozialmedien-Icons */
 }
