@@ -331,3 +331,28 @@ body {
 .social-icon {
     width: 60px; /* Breite des Icons *//* Automatische Höhe */
 }
+
+.dragon-img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border-radius: 2rem;
+    margin: 2%;
+}
+
+.dragon-img-small {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    border-radius: 2rem;
+    margin: 2%;
+}
+@media screen and (max-width: 767px) {
+    .dragon-img {
+        width: 90%;
+    }
+    .dragon-img-small {
+        width: 80%;
+    }
+    
+}
