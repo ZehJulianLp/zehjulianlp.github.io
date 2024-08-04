@@ -18,15 +18,16 @@
         "link": "https://sites.google.com/view/zehjulianlp-minigames/startseite"
     },
     {
-        "title": "Dwarslooper Pappaufsteller Website",
-        "description": "The Dwarslooper Pappaufsteller Website is a joke website where you can buy cardboard cutouts of Dwarslooper. Dwars is a friend of mine and he is active on Discord. He is making videos about Minecraft on YouTube. If you want to buy a cardboard cutout of him, you can visit the website. The website is in german. Have fun!",
-        "image": "https://mc-heads.net/avatar/9c30500960074294ac0044357d52cae3",
-        "link": "https://dwarslooper-pappaufsteller.store/"
-    },
-    {
         "title": "Github Projects",
         "description": "On my Github account, I have some projects. There are for example datapacks and python scripts. You can visit my Github account and see my projects.",
         "image": "../img/gitlogo.png",
         "link": "https://github.com/ZehJulianLp"
+    },
+    {
+        "title": "Dwarslooper Pappaufsteller Website",
+        "description": "The Dwarslooper Pappaufsteller Website is a joke website where you can buy cardboard cutouts of Dwarslooper. Dwars is a friend of mine and he is active on Discord. He is making videos about Minecraft on YouTube. If you want to buy a cardboard cutout of him, you can visit the website. The website is in german. Have fun!",
+        "image": "https://mc-heads.net/avatar/9c30500960074294ac0044357d52cae3",
+        "link": "https://dwarslooper-pappaufsteller.store/",
+        "cancelled": true
     }
 ]

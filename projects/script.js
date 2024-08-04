@@ -38,6 +38,15 @@ function createProjectElement(project) {
     linkElement.textContent = 'View';
     projectElement.appendChild(linkElement);
 
+    //wenn project cancelled, dann wird ein Hinweis angezeigt
+    //json = "cancelled": true
+    if (project.cancelled) {
+        var cancelledElement = document.createElement('p');
+        cancelledElement.textContent = 'This project has been cancelled.';
+        cancelledElement.classList.add('cancelled'); // Neue CSS-Klasse für abgesagte Projekte
+        projectElement.appendChild(cancelledElement);
+    }
+
     return projectElement;
 }
 

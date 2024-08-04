@@ -265,6 +265,17 @@ body {
     transition: background-color 0.15s ease;
 }
 
+.cancelled {
+    background-color: #202224;
+    color: #FF7E75;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #FF7E75;
+    display: flex;
+    align-items: center;
+}
+
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -356,3 +367,4 @@ body {
     }
     
 }
+
