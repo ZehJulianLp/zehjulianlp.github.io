@@ -18,6 +18,12 @@
         "link": "https://sites.google.com/view/zehjulianlp-minigames/startseite"
     },
     {
+        "title": "Cactus Mod",
+        "description": "I'm doing the german translation for the Cactus Mod. The Cactus Mod is a mod for Minecraft that adds redstone and command utilities. Go and check out the mod. Have fun!",
+        "image": "https://cactusmod.xyz/static/icon.webp",
+        "link": "https://cactusmod.xyz/"
+    },
+    {
         "title": "Github Projects",
         "description": "On my Github account, I have some projects. There are for example datapacks and python scripts. You can visit my Github account and see my projects.",
         "image": "../img/gitlogo.png",
