@@ -1,0 +1,51 @@
+[
+    {
+        "image": "../img/youtube.svg",
+        "link": "https://youtube.com/c/ZehJulianlp",
+        "title": "YouTube",
+        "description": "My YouTube channel with videos about Minecraft and roller coasters.",
+        "button": "Visit"
+    },
+    {
+        "image": "../img/twitch.svg",
+        "link": "https://twitch.tv/zehjulian_lp",
+        "title": "Twitch",
+        "description": "My Twitch stream with a variety of games and content.",
+        "button": "Subscribe"
+    },
+    {
+        "image": "../img/bluesky.svg",
+        "link": "https://bsky.app/profile/zehjulianlp.bsky.social",
+        "title": "BlueSky",
+        "description": "My BlueSky profile with some posts and pictures.",
+        "button": "Follow"
+    },
+    {
+        "image": "../img/twitter.svg",
+        "link": "https://twitter.com/ZehJulian_lp",
+        "title": "Twitter",
+        "description": "My Twitter where I post a lot things about dragons.",
+        "button": "Follow"
+    },
+    {
+        "image": "../img/discord.svg",
+        "link": "https://discord.gg/V5S32jghtV",
+        "title": "Discord",
+        "description": "The discord server of MCTorn, our Minecraft MMORPG.",
+        "button": "Join"
+    },
+    {
+        "image": "../img/github.svg",
+        "link": "https://github.com/ZehJulianLp/",
+        "title": "GitHub",
+        "description": "My GitHub Profile with most of my projects.",
+        "button": "Visit"
+    },
+    {
+        "image": "../img/pronoums.svg",
+        "link": "https://en.pronouns.page/@zehjulian_lp",
+        "title": "Pronouns Page",
+        "description": "My pronouns page, where you can see my pronouns.",
+        "button": "Visit"
+    }
+]
