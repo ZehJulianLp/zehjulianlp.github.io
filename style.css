@@ -11,6 +11,7 @@ body {
     margin-top: 5%;
     margin-left: 5%;
     border-radius: 25px;
+    max-width: 100px;
 }
 
 .navbar {
@@ -367,4 +368,3 @@ body {
     }
     
 }
-
