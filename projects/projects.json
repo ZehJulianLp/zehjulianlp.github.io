@@ -1,11 +1,5 @@
 [
     {
-        "title": "MCTorn",
-        "description": "MCTorn is a Minecraft MMORPG by me and some friends. We are working since 2020 on it and we are writing the project in Kotlin. If you want to know more about it, you can visit the website. We are also looking for developers, so if you are interested, you can contact me or apply on the website. Have fun!",
-        "image": "../img/tornlogo.png",
-        "link": "https://sites.google.com/view/mctorn"
-    },
-    {
         "title": "Redstone & Rails",
         "description": "A technical Minecraft map focused on redstone machines and rail systems.Includes elevators, storage, minecart logic, and command block features. Playable solo or in multiplayer. Most labels are in German but easy to understand. For Minecraft 1.20.1.",
         "image": "../img/Redstone.png",
@@ -28,6 +22,13 @@
         "description": "On my Github account, I have some projects. There are for example datapacks and python scripts. You can visit my Github account and see my projects.",
         "image": "../img/gitlogo.png",
         "link": "https://github.com/ZehJulianLp"
+    },
+    {
+        "title": "MCTorn",
+        "description": "MCTorn is a Minecraft MMORPG by me and some friends. We are working since 2020 on it and we are writing the project in Kotlin. If you want to know more about it, you can visit the website. We are also looking for developers, so if you are interested, you can contact me or apply on the website. Have fun!",
+        "image": "../img/tornlogo.png",
+        "link": "https://sites.google.com/view/mctorn",
+        "cancelled": true
     },
     {
         "title": "Dwarslooper Pappaufsteller Website",
