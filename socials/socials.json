@@ -14,6 +14,13 @@
         "button": "Subscribe"
     },
     {
+        "image": "../img/discord.svg",
+        "link": "https://discord.gg/V5S32jghtV",
+        "title": "Discord",
+        "description": "The discord server of MCTorn, our Minecraft Community.",
+        "button": "Join"
+    },
+    {
         "image": "../img/bluesky.svg",
         "link": "https://bsky.app/profile/zehjulianlp.bsky.social",
         "title": "BlueSky",
@@ -28,11 +35,11 @@
         "button": "Follow"
     },
     {
-        "image": "../img/discord.svg",
-        "link": "https://discord.gg/V5S32jghtV",
-        "title": "Discord",
-        "description": "The discord server of MCTorn, our Minecraft MMORPG.",
-        "button": "Join"
+        "image": "../img/soundcloud.svg",
+        "link": "https://soundcloud.com/zehjulian-lp",
+        "title": "SoundCloud",
+        "description": "My SoundCloud profile with my music.",
+        "button": "Listen"
     },
     {
         "image": "../img/github.svg",
