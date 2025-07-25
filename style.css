@@ -152,6 +152,7 @@ body {
     border-color: #b39797;
     border-width: 2px;
     position: relative; /* Relative Position für absolute Positionierung des Textes */
+    text-align: center; /* Buttons und Links mittig */
 }
 
 .contentbox a {
@@ -214,6 +215,7 @@ h2 {
 .logo:hover {
     transition: transform 0.15s ease;
     transform: scale(1.05);
+
 }
 .project {
     background-color: #202224;
@@ -374,4 +376,45 @@ body:not(.home) .project:hover {
         width: 80%;
     }
     
+}
+
+.button {
+    color: #DD6C2F;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #DD6C2F;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 5   px;
+    max-width: 200px;
+    transform: scale(1); /* Start normal */
+    transition: background-color 0.15s ease, transform 0.15s ease;
+    display: inline-block;
+    /* oder bei Bedarf block und margin: 0 auto */
+    max-width: 200px;
+    /* Rest wie du hast */
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #DD6C2F;
+    color: #FFF;
+    transform: scale(1.05); /* Vergrößern beim Hover */
+}
+
+.contentbox a.button {
+    text-decoration: none; /* überschreibt das underline */
+    color: #DD6C2F; /* Textfarbe */
+    font-weight: bold; /* Fettdruck */
+    display: inline-block; /* Damit es wie ein Button aussieht */
+    padding: 10px 20px; /* Innenabstand */
+    border: 2px solid #DD6C2F; /* Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.15s ease, transform 0.15s ease; /* Übergangseffekte */
+}
+
+.contentbox a.button:hover {
+    background-color: #DD6C2F; /* Hintergrundfarbe beim Hover */
+    color: #FFF; /* Textfarbe beim Hover */
+    transform: scale(1.05); /* Vergrößern beim Hover */
 }
