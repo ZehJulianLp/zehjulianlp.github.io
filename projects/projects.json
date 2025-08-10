@@ -12,6 +12,12 @@
         "link": "https://sites.google.com/view/zehjulianlp-minigames/startseite"
     },
     {
+        "title": "Alterhumania",
+        "description": "Alterhumania is a German-speaking community for Alterhumans, Therians, Otherkin, Fictionkin, and curious minds. A safe, inclusive space for identity exploration, discussion, and creativity – open to all.",
+        "image": "../img/pets.png",
+        "link": "https://discord.gg/kDKa5NV2tf"
+    },
+    {
         "title": "AccessAI",
         "description": "AccessAI is a real-world web project I developed as part of the AI4Youth program. It allows users to upload images of public transport stops and answer a few questions. A custom-trained AI then analyzes the accessibility of the location. The backend runs on Python and Flask, and the frontend is built with plain HTML, CSS, and JavaScript. It's a practical tool with a strong focus on inclusion and public infrastructure.",
         "image": "../img/accessai.png",
