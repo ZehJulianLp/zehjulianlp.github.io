@@ -335,3 +335,180 @@ body {
         width: 80%;
     }
 }
+/* --- Dragon Gallery --- */
+#dragon-gallery {
+  text-align: left;
+}
+
+/* Thumbnails-Kachel */
+.gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.gallery-thumbs button {
+  all: unset;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #b39797;
+  background: #202224;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.gallery-thumbs button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  border-color: #DD6C2F;
+}
+.gallery-thumbs button.is-active {
+  border-color: #DD6C2F;
+  box-shadow: 0 0 0 2px rgba(221,108,47,0.25);
+}
+
+.gallery-thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* gleichmäßige Kacheln, kein Verzerren */
+  display: block;
+}
+
+/* Viewer */
+.gallery-viewer {
+  position: relative;
+  background: #202224;
+  border: 2px solid #b39797;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+/* Hauptbild: groß, aber nie verzerrt */
+.gallery-viewer img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  background: #16181a;
+}
+
+/* Pfeile */
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #DD6C2F;
+  color: #DD6C2F;
+  background: rgba(32,34,36,0.7);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.gallery-arrow:hover {
+  background: #DD6C2F;
+  color: #fff;
+  transform: translateY(-50%) scale(1.06);
+}
+.gallery-prev { left: 10px; }
+.gallery-next { right: 10px; }
+
+/* Caption */
+.gallery-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+  color: #ffdfdf;
+}
+.gallery-counter {
+  opacity: 0.85;
+}
+.gallery-artist a {
+  color: #DD6C2F;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(221,108,47,0.6);
+}
+.gallery-artist a:hover {
+  color: #FF7E75;
+  border-bottom-color: transparent;
+}
+
+/* Mobile Feinschliff */
+@media (max-width: 767px) {
+  .gallery-arrow { width: 36px; height: 36px; font-size: 20px; }
+  .gallery-viewer img { max-height: 50vh; }
+}
+/* --- Gallery caption rework --- */
+.gallery-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+/* Zeile mit Zähler + Artist */
+.gallery-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gallery-counter {
+  font-size: 14px;
+  color: #ffdfdf;
+  opacity: 0.9;
+}
+
+/* Künstler prominenter */
+.gallery-artist {
+  font-size: 18px;           /* größer */
+  font-weight: 700;          /* fett */
+  color: #FF7E75;            /* Header-Farbe */
+  letter-spacing: 0.2px;
+}
+
+.gallery-artist a {
+  color: #FF7E75;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255,126,117,0.35);
+  padding-bottom: 1px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.gallery-artist a:hover {
+  color: #ff9a91;
+  border-bottom-color: transparent;
+}
+
+/* Beschreibung unter Artist */
+.gallery-desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffdfdf;
+  opacity: 0.95;
+  background: rgba(32,34,36,0.6);
+  border: 1px solid rgba(179,151,151,0.5);
+  border-radius: 10px;
+  padding: 10px 12px;
+  word-break: break-word;
+}
+
+/* Mobile Feinschliff */
+@media (max-width: 767px) {
+  .gallery-artist { font-size: 17px; }
+  .gallery-desc { font-size: 14px; }
+}

@@ -29,17 +29,30 @@
         <h1>A dragon who likes water</h1>
     </div>
 
-    <div class="contentbox">
-        <h2>A very nice image of myself</h2>
-        <img src="../img/MossComm.png" alt="Water Dragon" class="dragon-img">
-        <div class="normaltext">Drawn by mosshotel</div>
-    </div>
+<div class="contentbox" id="dragon-gallery">
+  <h2>Art Gallery</h2>
 
-    <div class="contentbox">
-        <h2>My own drawing</h2>
-        <img src="../img/julianold.jpg" alt="Water Dragon" class="dragon-img-small">
-        <div class="normaltext">Drawn by me</div>
+  <!-- Thumbnails oben -->
+  <div class="gallery-thumbs" id="galleryThumbs" aria-label="Image thumbnails"></div>
+
+  <!-- Viewer mit Pfeilen -->
+  <div class="gallery-viewer">
+    <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
+    <img id="galleryMain" alt="">
+    <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
+  </div>
+
+  <!-- Caption: Counter + Artist (groß) + Description (aus alt) -->
+  <div class="gallery-caption">
+    <div class="gallery-meta">
+      <span id="galleryCounter" class="gallery-counter"></span>
+      <span id="galleryArtist" class="gallery-artist"></span>
     </div>
+    <div id="galleryDesc" class="gallery-desc"></div>
+  </div>
+</div>
+
+
 
     <div class="contentbox">
         <h2>So... I'm a dragon.</h2>
@@ -103,5 +116,126 @@
         </p>
         <a href="../socials/" class="button">Check out my socials</a>
     </div>
+
+<script>
+// gallery.js
+(() => {
+  window.addEventListener('DOMContentLoaded', () => {
+    const JSON_PATH = 'images.json'; // gleicher Ordner wie die HTML-Datei
+
+    // DOM refs
+    const thumbsEl  = document.getElementById('galleryThumbs');
+    const mainImgEl = document.getElementById('galleryMain');
+    const prevBtn   = document.getElementById('galleryPrev');
+    const nextBtn   = document.getElementById('galleryNext');
+    const artistEl  = document.getElementById('galleryArtist');
+    const counterEl = document.getElementById('galleryCounter');
+    const descEl    = document.getElementById('galleryDesc');
+
+    // Guard: Falls die Gallery auf dieser Seite nicht existiert, sauber aussteigen
+    if (!thumbsEl || !mainImgEl || !prevBtn || !nextBtn || !artistEl || !counterEl || !descEl) {
+      console.warn('[Gallery] Elements not found on this page. Skipping init.');
+      return;
+    }
+
+    let images = [];
+    let current = 0;
+
+    // Fetch JSON
+    (async () => {
+      try {
+        const res = await fetch(JSON_PATH, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Failed to load ${JSON_PATH} (${res.status})`);
+        images = await res.json();
+      } catch (err) {
+        console.error('[Gallery] JSON load error:', err);
+        thumbsEl.innerHTML = '<div class="normaltext">No images found.</div>';
+        return;
+      }
+
+      if (!Array.isArray(images) || images.length === 0) {
+        thumbsEl.innerHTML = '<div class="normaltext">No images found.</div>';
+        return;
+      }
+
+      // Thumbnails bauen
+      images.forEach((img, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.setAttribute('aria-label', `Open image ${idx + 1}`);
+        const t = document.createElement('img');
+        t.src = img.src;
+        t.alt = img.alt || `Image ${idx + 1}`;
+        btn.appendChild(t);
+        btn.addEventListener('click', () => show(idx));
+        thumbsEl.appendChild(btn);
+      });
+
+      // Helpers
+      function preload(i) {
+        const img = new Image();
+        const item = images[(i + images.length) % images.length];
+        if (item && item.src) img.src = item.src;
+      }
+
+      function updateActiveThumb() {
+        const buttons = thumbsEl.querySelectorAll('button');
+        buttons.forEach(b => b.classList.remove('is-active'));
+        if (buttons[current]) buttons[current].classList.add('is-active');
+      }
+
+      function updateCaption() {
+        const item = images[current] || {};
+        counterEl.textContent = `${current + 1} / ${images.length}`;
+
+        // Artist prominent + Link optional
+        if (item.artist && item.artistUrl) {
+          artistEl.innerHTML = `Artist: <a href="${item.artistUrl}" target="_blank" rel="noopener">${item.artist}</a>`;
+        } else if (item.artist) {
+          artistEl.textContent = `Artist: ${item.artist}`;
+        } else {
+          artistEl.textContent = '';
+        }
+
+        // Description = ALT
+        const desc = item.alt || '';
+        if (desc) {
+          descEl.textContent = desc;
+          descEl.style.display = '';
+        } else {
+          descEl.textContent = '';
+          descEl.style.display = 'none';
+        }
+      }
+
+      function show(i) {
+        current = (i + images.length) % images.length;
+        const item = images[current] || {};
+        mainImgEl.src = item.src || '';
+        mainImgEl.alt = item.alt || `Image ${current + 1}`;
+        updateActiveThumb();
+        updateCaption();
+        preload(current + 1);
+        preload(current - 1);
+      }
+
+      // Controls
+      prevBtn.addEventListener('click', () => show(current - 1));
+      nextBtn.addEventListener('click', () => show(current + 1));
+
+      // Keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft')  show(current - 1);
+        if (e.key === 'ArrowRight') show(current + 1);
+      });
+
+      // Init
+      show(0);
+    })();
+  });
+})();
+
+</script>
+
 </body>
 </html>
