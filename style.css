@@ -632,3 +632,18 @@ body {
   .guestbook-kicker { font-size: 20px; }
   .guidelines-list { gap: 6px; }
 }
+.friend-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.friend-link {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+}
+.friend-card span {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
