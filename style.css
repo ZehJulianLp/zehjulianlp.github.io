@@ -1,86 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 body {
     background-color: #2a3b47;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.6;
     margin: 0;
 }
+
+/* LOGO */
 .logo img {
     margin-top: 5%;
     margin-left: 5%;
-    border-radius: 25px;
+    border-radius: 20px;
     max-width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+/* NAVIGATION */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: left;
     background-color: #306658;
-    border-radius: 0px;
-    margin-bottom: 0px;
-    border: none;
     font-size: large;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .navitem {
-    display: inline;
+    display: inline-block;
     padding: 10px;
     margin: 10px;
-    padding: 10px;
-    font-size: large;
-    background-color: #306658;
-}
-@media (max-width: 767px) {
-    .navbar {
-        display: block;
-    }
-    .navitem {
-        display: block;
-        margin: 0;
-        padding: 10px;
-        font-size: large;
-        background-color: #306658;;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo img {
-        margin-top: 5%;
-        margin-left: 5%;
-        border-radius: 25px;
-        width: 20%;
-    }
-    .project {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .project img {
-        max-width: 80%;
-        margin-bottom: 10px;
-    }
-
-    .project-info {
-        text-align: center;
-    }
-
-    .project h3 {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-
-    .project p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .project a {
-        padding: 6px 12px;
-        font-size: 14px;
-    }
+    border-radius: 8px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .navitem a {
@@ -91,26 +48,22 @@ body {
 
 .navitem:hover {
     background-color: #294e44;
-    transition: background-color 0.15s ease;
-    border-radius: 10px
-}
-.selected {
-    transition: background-color 0.15s ease;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #dd6c2f;
-    background-color: #3d7868;
-    border-width: 2px;
+    transform: translateY(-2px);
 }
 
+.selected {
+    border-radius: 8px;
+    border: 2px solid #dd6c2f;
+    background-color: #3d7868;
+}
+
+/* TEXT STYLES */
 .header {
     color: #ff7e75;
     padding: 1%;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 .bigtext {
@@ -123,219 +76,228 @@ body {
 .normaltext {
     font-size: 20px;
     text-align: center;
-    margin-top: 0;
     color: #ffdfdf;
 }
 
-.contentbox {
+/* CONTENT BOXES */
+.contentbox, .contentbox-social {
     background-color: #202224;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 1%;
     margin: 1%;
-    border-style: solid;
-    border-color: #b39797;
-    border-width: 2px;
+    border: 2px solid #b39797;
     text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.contentbox:hover {
+.contentbox:hover, .contentbox-social:hover {
     background-color: #294e44;
-    transition: background-color 0.15s ease;
-}
-
-.contentbox-social {
-    background-color: #202224;
-    border-radius: 10px;
-    padding: 1%;
-    margin: 1%;
-    border-style: solid;
-    border-color: #b39797;
-    border-width: 2px;
-    position: relative; /* Relative Position für absolute Positionierung des Textes */
-    text-align: center; /* Buttons und Links mittig */
+    transform: translateY(-3px);
 }
 
 .contentbox a {
     color: #dd6c2f;
-    text-decoration: none;
     font-weight: bold;
     text-decoration: underline;
 }
-
-.contentbox h2 {
-    color: #ff7e75;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-size: 24px;
-    color: #ff7e75;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
 .contentbox a:hover {
     color: #ff7e75;
 }
-
-.wrong img {
-    /*stretched wide image*/
-    width: 50%;
-    height: 200px;
-    border-radius: 10px;
-    border-radius: 2rem;
-}
-
-.social-container {
-    text-align: center; /* Zentrieren der Sozialmedien-Icons */
-}
-
-.social-container a {
-    display: inline-block; /* Anker als Inline-Block-Elemente anzeigen */
-    margin: 0 5px; /* Horizontaler Abstand zwischen den Icons */
-}
-
-.social-icon {
-    width: 50px; /* Breite des Icons */
-    height: auto; /* Automatische Höhe */
-    fill: #DD6C2F; /* Füllfarbe des Icons */
-}
-
-.contentbox-social:hover {
-    background-color: #294e44;
-    transition: background-color 0.15s ease;
-}
-
-.social-container a:hover {
-    transform: scale(1.25);
-    transition: transform 0.15s ease;
-}
-
-.logo:hover {
-    transition: transform 0.15s ease;
-    transform: scale(1.05);
-
-}
+/* PROJECTS — stabil, clean, ohne Layout-Shift */
 .project {
     background-color: #202224;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px; /* Hier wird der äußere Abstand eingestellt */
     border: 2px solid #b39797;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;      /* nicht mitten im Text ausrichten */
+    gap: 16px;                    /* konsistenter Abstand statt margin-right */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.project:hover {
+    background-color: #294e44;
+    transform: translateY(-3px);
 }
 
 .project img {
-    display: block;
-    max-width: 100px; /* Maximalbreite des Bildes */
-    height: auto;
+    /* fixes: konstante Größe + kein Verzerren */
+    width: 96px;
+    height: 96px;
+    flex: 0 0 96px;
     border-radius: 10px;
-    margin-right: 20px; /* Abstand rechts vom Bild */
+    object-fit: cover;            /* zentriert/füllt ohne Stretch */
+    display: block;
 }
 
 .project-info {
-    flex: 1; /* Flexibles Wachstum für den Rest des Inhalts */
+    flex: 1;
+    min-width: 0;                 /* erlaubt sauberes Zeilenumbruch-Verhalten */
 }
 
 .project h3 {
     color: #FF7E75;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 0 0 8px 0;            /* enger, damit Text nicht hüpft */
+    line-height: 1.2;
+    word-break: break-word;       /* lange Wörter/URLs brechen sauber */
 }
 
 .project p {
     color: #FFF;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin: 0 0 14px 0;
+    line-height: 1.45;
+    opacity: 0.95;
 }
 
 .project a {
+    /* Button bleibt “griffig”, ohne Layout zu sprengen */
     color: #DD6C2F;
     text-decoration: none;
     font-weight: bold;
     border: 2px solid #DD6C2F;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: background-color 0.15s ease;
+    border-radius: 8px;
+    padding: 8px 14px;
+    display: inline-flex;         /* bessere Hitbox/Ausrichtung */
+    align-items: center;
+    gap: 8px;
+    will-change: transform;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project a:hover {
     background-color: #DD6C2F;
     color: #FFF;
-    transform: scale(1.25);
-    transition: transform 0.15s ease;
+    transform: translateZ(0) scale(1.06); /* weniger aggressiv als 1.25 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
-body:not(.home) .project:hover {
-    /*background-color ease 0.15s;*/
-    background-color: #294e44;
-    transition: background-color 0.15s ease;
+/* Falls mehrere Links kommen, etwas Abstand zur Copy */
+.project a + a {
+    margin-left: 10px;
 }
 
-.cancelled {
-    background-color: #202224;
+/* Styling für Cancel-Hinweis als Textblock */
+.project .cancelled {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    border: 1px dashed #FF7E75;
+    border-radius: 8px;
+    background: rgba(255, 126, 117, 0.1);
     color: #FF7E75;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid #FF7E75;
-    display: flex;
-    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: inset 0 0 8px rgba(255, 126, 117, 0.15);
+}
+
+/* Responsive Feinschliff ohne Layout-Änderung */
+@media (max-width: 767px) {
+    .project {
+        flex-direction: column;   /* wie bei dir vorgesehen */
+        align-items: center;
+        text-align: center;
+    }
+    .project img {
+        width: 90px;
+        height: 90px;
+        flex: 0 0 90px;
+        margin-right: 0;
+    }
+    .project-info {
+        width: 100%;
+    }
+    .project a + a {
+        margin-left: 0;
+        margin-top: 8px;          /* Buttons stacken sauber */
+    }
+}
+
+/* BUTTONS */
+.button, .contentbox a.button {
+    color: #DD6C2F;
+    border: 2px solid #DD6C2F;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    background: transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.button:hover, .contentbox a.button:hover {
+    background-color: #DD6C2F;
+    color: #FFF;
+    transform: scale(1.05);
 }
 
 .social-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .social-box {
-    background-color: #202224;
+    background: rgba(32, 34, 36, 0.9);
     border: 2px solid #b39797;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 10px 20px;
-    width: 30%;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-box img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.social-box-text {
+    border-radius: 16px;
+    padding: 25px 20px;
+    max-width: 260px;
+    width: 100%;
     text-align: center;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.social-box img,
+.social-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    transition: transform 0.3s ease;
 }
 
 .social-box-text h2 {
     color: #FF7E75;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
-
 .social-box-text p {
-    color: #FFF;
-    font-size: 18px;
-    margin-bottom: 15px;
+    color: #EEE;
+    font-size: 15px;
+    margin-bottom: 14px;
+    line-height: 1.4;
 }
 
 .social-box a {
-    color: #DD6C2F;
-    text-decoration: none;
-    font-weight: bold;
+    display: inline-block;
     border: 2px solid #DD6C2F;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: background-color 0.15s ease;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #DD6C2F;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-box:hover {
+    background-color: rgba(41, 78, 68, 0.95);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+.social-box:hover img,
+.social-box:hover .social-icon {
+    transform: scale(1.15);
 }
 
 .social-box a:hover {
@@ -343,78 +305,33 @@ body:not(.home) .project:hover {
     color: #FFF;
 }
 
-.social-box:hover {
-    background-color: #294e44;
-    transition: background-color 0.15s ease;
+
+/* IMAGES */
+.dragon-img, .dragon-img-small {
+    border-radius: 1.5rem;
+    margin: 2%;
 }
-
-
-.social-icon {
-    width: 60px; /* Breite des Icons *//* Automatische Höhe */
-}
-
 .dragon-img {
     width: 80%;
-    height: auto;
-    border-radius: 10px;
-    border-radius: 2rem;
-    margin: 2%;
 }
-
 .dragon-img-small {
     width: 40%;
-    height: auto;
-    border-radius: 10px;
-    border-radius: 2rem;
-    margin: 2%;
 }
-@media screen and (max-width: 767px) {
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .navbar {
+        display: block;
+    }
+    .navitem {
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
     .dragon-img {
         width: 90%;
     }
     .dragon-img-small {
         width: 80%;
     }
-    
-}
-
-.button {
-    color: #DD6C2F;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid #DD6C2F;
-    border-radius: 5px;
-    padding: 8px 16px;
-    margin-top: 5   px;
-    max-width: 200px;
-    transform: scale(1); /* Start normal */
-    transition: background-color 0.15s ease, transform 0.15s ease;
-    display: inline-block;
-    /* oder bei Bedarf block und margin: 0 auto */
-    max-width: 200px;
-    /* Rest wie du hast */
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: #DD6C2F;
-    color: #FFF;
-    transform: scale(1.05); /* Vergrößern beim Hover */
-}
-
-.contentbox a.button {
-    text-decoration: none; /* überschreibt das underline */
-    color: #DD6C2F; /* Textfarbe */
-    font-weight: bold; /* Fettdruck */
-    display: inline-block; /* Damit es wie ein Button aussieht */
-    padding: 10px 20px; /* Innenabstand */
-    border: 2px solid #DD6C2F; /* Rahmen */
-    border-radius: 5px; /* Abgerundete Ecken */
-    transition: background-color 0.15s ease, transform 0.15s ease; /* Übergangseffekte */
-}
-
-.contentbox a.button:hover {
-    background-color: #DD6C2F; /* Hintergrundfarbe beim Hover */
-    color: #FFF; /* Textfarbe beim Hover */
-    transform: scale(1.05); /* Vergrößern beim Hover */
 }
