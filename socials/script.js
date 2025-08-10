@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { url: "https://scaliesne.st/", name: "Scalies' Nest" },
       { url: "https://wyndscale.carrd.co/", name: "dreki's website" },
       { url: "https://bluefi.re/", name: "Bluefire" },
-      { url: "https://zwartice.com/", name: "Akir'scha" },
+      { url: "https://zwartice.com/", name: "Akir'Ischa" },
       { url: "https://bsky.app/profile/bluzu.bsky.social", name: "Bluzu" },
       { url: "https://jansel.dev/", name: "Jansel" },
       { url: "https://rhaeloth.tumblr.com/", name: "Rhaeloth" }
