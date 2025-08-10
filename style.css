@@ -512,3 +512,47 @@ body {
   .gallery-artist { font-size: 17px; }
   .gallery-desc { font-size: 14px; }
 }
+/* Guestbook Container */
+#guestbook {
+  padding: 20px;
+  border-radius: 12px;
+  background: #111; /* oder dein Theme-Hintergrund */
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+/* Guestbook Überschrift */
+#guestbook h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #c084fc; /* Lila-Ton aus deinem Theme */
+}
+
+/* Guestbook Hinweistexte */
+#guestbook p.normaltext {
+  font-size: 0.95em;
+  color: #bbb;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Giscus iframe (Kommentarbox) */
+.giscus, .giscus-frame {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cta-guestbook {
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+}
+
+.cta-guestbook h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.cta-guestbook .button {
+    background: white;
+    color: #6a0dad;
+    font-weight: bold;
+}
