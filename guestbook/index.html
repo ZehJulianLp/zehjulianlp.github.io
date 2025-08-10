@@ -29,30 +29,43 @@
     <div class="header">
         <h1>Guestbook</h1>
     </div>
+<div class="guestbook-hero contentbox">
+  <h2 class="guestbook-kicker">Say hi 👋 — leave a rawr 🐉</h2>
+    <p class="normaltext subtle">This is my guestbook, where you can share your thoughts, feedback, or just say hello! I love hearing from you.</p>
+</div>
 
-    <!-- Guestbook Box -->
-    <div class="contentbox" id="guestbook">
-        <p class="normaltext">Say hi, leave feedback, or drop a nice Rawr :)</p>
+<div class="contentbox guidelines">
+  <h2>Guidelines</h2>
+  <ul class="guidelines-list">
+    <li>Be respectful. No harassment, no spam.</li>
+    <li>Stay on topic. Short stories & nerdy stuff welcome.</li>
+    <li>Keep it constructive. Memes okay, but friendly.</li>
+    <li>Markdown: <code>**bold**</code>, <code>*italic*</code>, <code>~~strike~~</code>, code blocks & images.</li>
+  </ul>
+</div>
 
-        <!-- Giscus Embed -->
-<script src="https://giscus.app/client.js"
-        data-repo="ZehJulianLp/zehjulianlp.github.io"
-        data-repo-id="R_kgDOHAxhiA"
-        data-category="Guestbook"
-        data-category-id="DIC_kwDOHAxhiM4CuBBC"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+<div class="contentbox guestbook-wrap" id="guestbook">
+  <p class="normaltext subtle">Log in with GitHub to comment.</p>
 
-        <p class="normaltext">If you want to leave a message, please log in with your GitHub account.</p>
-        <p class="normaltext">If you don't have a GitHub account, you can create one <a href="https://github.com/join">here</a>.</p>
-    </div>
-</body>
+  <script src="https://giscus.app/client.js"
+          data-repo="ZehJulianLp/zehjulianlp.github.io"
+          data-repo-id="R_kgDOHAxhiA"
+          data-category="Guestbook"
+          data-category-id="DIC_kwDOHAxhiM4CuBBC"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+  <p class="normaltext subtle">
+    No GitHub account? <a href="https://github.com/join" target="_blank" rel="noopener">Create one here</a>.
+  </p>
+</div>
+
 </html>

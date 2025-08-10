@@ -556,3 +556,79 @@ body {
     color: #6a0dad;
     font-weight: bold;
 }
+/* --- Guestbook Special Look (nur hier) --- */
+.guestbook-hero {
+  text-align: center;
+  border-radius: 14px;
+  padding: 24px 18px;
+  background: radial-gradient(120% 120% at 10% -10%, rgba(255,126,117,0.12), rgba(32,34,36,0.9) 60%),
+              linear-gradient(135deg, rgba(106,13,173,0.25), rgba(61,120,104,0.15));
+  border: 2px solid #b39797;
+}
+.guestbook-kicker {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  color: #ffdfdf;
+}
+
+/* Guidelines kompakt & lesbar */
+.guidelines h2 {
+  margin-top: 0;
+}
+.guidelines-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0 0;
+  display: grid;
+  gap: 8px;
+}
+.guidelines-list li {
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.5;
+  color: #ffdfdf;
+}
+.guidelines-list li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.9;
+}
+
+/* Giscus-Box an dein Theme anpassen */
+.guestbook-wrap {
+  padding: 16px;
+}
+.guestbook-wrap .normaltext.subtle {
+  color: #cfd3d5;
+  opacity: 0.9;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Giscus iframe “eingebettet” aussehen lassen */
+.giscus, .giscus-frame, #guestbook iframe {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #b39797;
+  background: #202224;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+
+/* Links in diesem Bereich in deinem Akzent */
+#guestbook a {
+  color: #DD6C2F;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(221,108,47,0.6);
+}
+#guestbook a:hover {
+  color: #FF7E75;
+  border-bottom-color: transparent;
+}
+
+/* Mobile Feinschliff */
+@media (max-width: 767px) {
+  .guestbook-kicker { font-size: 20px; }
+  .guidelines-list { gap: 6px; }
+}
