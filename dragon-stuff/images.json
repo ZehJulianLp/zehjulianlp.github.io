@@ -1,9 +1,9 @@
 [
   {
-    "src": "../img/MossComm.png",
-    "alt": "Full-body commission of my SeaWing self with soft lighting and tranquil ocean vibes.",
-    "artist": "mosshotel",
-    "artistUrl": "https://discord.com/users/189806513408180234"
+    "src": "../img/emerald.png",
+    "alt": "First ever request of my SeaWing self – a headshot full of charm and personality.",
+    "artist": "EmeraldTurtle",
+    "artistUrl": "https://www.deviantart.com/emeraldturtle75"
   },
   {
     "src": "../img/julianold.jpg",
@@ -24,15 +24,21 @@
     "artistUrl": "https://ko-fi.com/digi"
   },
   {
+    "src": "../img/dreki.png",
+    "alt": "Smiling headshot of my SeaWing self, vibrant colors and friendly vibe. There is a beach in the background.",
+    "artist": "dreki",
+    "artistUrl": "https://wyndscale.carrd.co/"
+  },
+  {
     "src": "../img/hiseel.jpg",
     "alt": "Commissioned headshot of my SeaWing self, crisp details and vivid color palette.",
     "artist": "Hiseel",
     "artistUrl": "https://hiseel.carrd.co/"
   },
   {
-    "src": "../img/emerald.png",
-    "alt": "First ever request of my SeaWing self – a headshot full of charm and personality.",
-    "artist": "EmeraldTurtle",
-    "artistUrl": "https://www.deviantart.com/emeraldturtle75"
+    "src": "../img/MossComm.png",
+    "alt": "Full-body commission of my SeaWing self with soft lighting and tranquil ocean vibes.",
+    "artist": "mosshotel",
+    "artistUrl": "https://discord.com/users/189806513408180234"
   }
 ]
