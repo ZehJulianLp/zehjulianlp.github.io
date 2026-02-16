@@ -18,10 +18,16 @@
         "link": "https://discord.gg/kDKa5NV2tf"
     },
     {
-        "title": "AccessAI",
-        "description": "AccessAI is a real-world web project I developed as part of the AI4Youth program. It allows users to upload images of public transport stops and answer a few questions. A custom-trained AI then analyzes the accessibility of the location. The backend runs on Python and Flask, and the frontend is built with plain HTML, CSS, and JavaScript. It's a practical tool with a strong focus on inclusion and public infrastructure.",
-        "image": "../img/accessai.png",
-        "link": "https://github.com/ZehJulianLp/AccessAI"
+        "title": "Startpage",
+        "description": "Startpage is my customizable dashboard-style browser start page. It runs fully client-side using localStorage and includes search with bang shortcuts, multi-city weather, transport departures via a custom proxy, RSS news feeds, persistent todos and notes, background engine with accent extraction, command palette, full i18n support, data presets, and the integrated Startpage Agent powered by Ollama. The project focuses on privacy, modular design, and a clean, extensible architecture without any backend dependencies.",
+        "image": "../img/startpage.svg",
+        "link": "https://github.com/ZehJulianLp/startpage"
+    },
+    {
+        "title": "Dwarslooper Pappaufsteller Website",
+        "description": "The Dwarslooper Pappaufsteller Website is a joke website where you can buy cardboard cutouts of Dwarslooper. Dwars is a friend of mine and he is active on Discord. He is making videos about Minecraft on YouTube. If you want to buy a cardboard cutout of him, you can visit the website. The website is in german. Have fun!",
+        "image": "https://mc-heads.net/avatar/9c30500960074294ac0044357d52cae3",
+        "link": "https://julianverse.de/dwarslooper-pappaufsteller/"
     },
     {
         "title": "TheJoCraft",
@@ -46,13 +52,6 @@
         "description": "MCTorn was a Minecraft MMORPG I co-developed with friends between 2020 and 2024. It was written in Kotlin and had a strong focus on world-building and questing. The project is no longer active, but we learned a lot and had a great time building it.",
         "image": "../img/tornlogo.png",
         "link": "https://sites.google.com/view/mctorn",
-        "cancelled": true
-    },
-    {
-        "title": "Dwarslooper Pappaufsteller Website",
-        "description": "The Dwarslooper Pappaufsteller Website is a joke website where you can buy cardboard cutouts of Dwarslooper. Dwars is a friend of mine and he is active on Discord. He is making videos about Minecraft on YouTube. If you want to buy a cardboard cutout of him, you can visit the website. The website is in german. Have fun!",
-        "image": "https://mc-heads.net/avatar/9c30500960074294ac0044357d52cae3",
-        "link": "https://dwarslooper-pappaufsteller.store/",
         "cancelled": true
     }
 ]
