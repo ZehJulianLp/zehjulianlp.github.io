@@ -12,20 +12,29 @@ var birthday = '2003-09-16';
 var age = calculateAge(birthday);
 
 var age1 = document.getElementById('age');
-age1.textContent = "Welcome to the webpage of Julian (he/they, "+ age + ").";
+if (age1) {
+    age1.textContent = "Welcome to the webpage of Julian (he/they, "+ age + ").";
+}
 
-fetch("./projects/projects.json")
-  .then((res) => res.json())
-  .then((projects) => {
-    const valid = projects.filter(p => !p.cancelled);
-    const project = valid[Math.floor(Math.random() * valid.length)];
+const spotlightImage = document.getElementById("spotlight-image");
+const spotlightTitle = document.getElementById("spotlight-title");
+const spotlightDescription = document.getElementById("spotlight-description");
+const spotlightLink = document.getElementById("spotlight-link");
 
-    document.getElementById("spotlight-image").src = project.image;
-    document.getElementById("spotlight-image").alt = project.title;
-    document.getElementById("spotlight-title").textContent = project.title;
-    document.getElementById("spotlight-description").textContent = project.description;
-    document.getElementById("spotlight-link").href = project.link;
-  });
+if (spotlightImage && spotlightTitle && spotlightDescription && spotlightLink) {
+  fetch("./projects/projects.json")
+    .then((res) => res.json())
+    .then((projects) => {
+      const valid = projects.filter(p => !p.cancelled);
+      const project = valid[Math.floor(Math.random() * valid.length)];
+
+      spotlightImage.src = project.image;
+      spotlightImage.alt = project.title;
+      spotlightTitle.textContent = project.title;
+      spotlightDescription.textContent = project.description;
+      spotlightLink.href = project.link;
+    });
+}
 
 
 const quotes = [
@@ -82,4 +91,7 @@ const quotes = [
   "The surface is a place to judge – depth is a place to understand."
 ];
 const quote = quotes[Math.floor(Math.random() * quotes.length)];
-document.getElementById("random-quote").textContent = "“" + quote + "”";
+const randomQuote = document.getElementById("random-quote");
+if (randomQuote) {
+  randomQuote.textContent = "“" + quote + "”";
+}

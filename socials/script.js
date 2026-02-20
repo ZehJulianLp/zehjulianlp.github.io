@@ -1,11 +1,72 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // ===== Socials =====
-  const socialsTarget = document.getElementById("socials-main"); // <div id="socials-main" class="social-container"></div>
-  if (socialsTarget) {
-    fetch("socials.json")
-      .then(res => res.json())
-      .then(data => {
-        data.forEach(social => {
+  const socialsTarget = document.getElementById("socials-main");
+  const friendsTarget = document.getElementById("friends-container");
+
+  function getInitials(name) {
+    const cleaned = name.replace(/[^a-zA-Z0-9\s]/g, " ").trim();
+    const parts = cleaned.split(/\s+/).filter(Boolean);
+    if (parts.length === 0) return "FR";
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[1][0]).toUpperCase();
+  }
+
+  function getDomain(url) {
+    try {
+      return new URL(url).hostname.replace(/^www\./, "");
+    } catch (_) {
+      return url;
+    }
+  }
+
+  function getFaviconCandidates(domain) {
+    return [
+      `https://www.google.com/s2/favicons?sz=64&domain=${domain}`,
+      `https://icons.duckduckgo.com/ip3/${domain}.ico`,
+      `https://${domain}/favicon.ico`
+    ];
+  }
+
+  function tryFavicon(img, fallback, urls, index) {
+    if (index >= urls.length) {
+      img.style.opacity = "0";
+      fallback.style.display = "grid";
+      return;
+    }
+
+    const url = urls[index];
+    let done = false;
+    const timeout = setTimeout(() => {
+      if (done) return;
+      done = true;
+      tryFavicon(img, fallback, urls, index + 1);
+    }, 2500);
+
+    img.onload = () => {
+      if (done) return;
+      done = true;
+      clearTimeout(timeout);
+      img.style.opacity = "1";
+      fallback.style.display = "none";
+    };
+
+    img.onerror = () => {
+      if (done) return;
+      done = true;
+      clearTimeout(timeout);
+      tryFavicon(img, fallback, urls, index + 1);
+    };
+
+    img.src = url;
+  }
+
+  fetch("socials.json")
+    .then(res => res.json())
+    .then(data => {
+      const socials = Array.isArray(data.socials) ? data.socials : [];
+      const friends = Array.isArray(data.friends) ? data.friends : [];
+
+      if (socialsTarget) {
+        socials.forEach(social => {
           const box = document.createElement("div");
           box.classList.add("social-box");
 
@@ -26,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const link = document.createElement("a");
           link.href = social.link;
           link.target = "_blank";
+          link.rel = "noopener";
           link.textContent = social.button;
 
           text.appendChild(title);
@@ -36,42 +98,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
           socialsTarget.appendChild(box);
         });
-      })
-      .catch(err => console.error("Error loading socials.json:", err));
-  } else {
-    console.warn("[Socials] #socials-main not found.");
-  }
+      }
 
-  // ===== Friends =====
-  const friendsTarget = document.getElementById("friends-container"); // <div id="friends-container" class="social-container"></div>
-  if (friendsTarget) {
-    const friends = [
-      { url: "https://scaliesne.st/", name: "Scalies' Nest" },
-      { url: "https://wyndscale.carrd.co/", name: "dreki's website" },
-      { url: "https://bluefi.re/", name: "Bluefire" },
-      { url: "https://zwartice.com/", name: "Akir'Ischa" },
-      { url: "https://bsky.app/profile/bluzu.bsky.social", name: "Bluzu" },
-      { url: "https://jansel.dev/", name: "Jansel" },
-      { url: "https://rhaeloth.tumblr.com/", name: "Rhaeloth" }
-    ];
+      if (friendsTarget) {
+        friends.forEach(friend => {
+          const friendName = friend.title;
+          const friendUrl = friend.link;
+          const domainName = getDomain(friendUrl);
 
-    friends.forEach(friend => {
-      const favicon = `https://www.google.com/s2/favicons?sz=64&domain_url=${friend.url}`;
-      const a = document.createElement("a");
-      a.href = friend.url;
-      a.target = "_blank";
-      a.className = "friend-link";
+          const card = document.createElement("article");
+          card.className = "social-box friend-box";
 
-      a.innerHTML = `
-        <div class="friend-card">
-          <img src="${favicon}" alt="${friend.name} favicon" class="social-icon">
-          <span>${friend.name}</span>
-        </div>
-      `;
+          const badge = document.createElement("div");
+          badge.className = "friend-badge";
+          const initials = document.createElement("span");
+          initials.className = "friend-initials";
+          initials.textContent = getInitials(friendName);
 
-      friendsTarget.appendChild(a);
-    });
-  } else {
-    console.warn("[Friends] #friends-container not found.");
-  }
+          const favicon = document.createElement("img");
+          favicon.className = "friend-favicon";
+          favicon.alt = `${friendName} favicon`;
+          favicon.loading = "eager";
+          favicon.decoding = "async";
+
+          badge.appendChild(initials);
+          badge.appendChild(favicon);
+          tryFavicon(favicon, initials, getFaviconCandidates(domainName), 0);
+
+          const name = document.createElement("h3");
+          name.className = "friend-name";
+          name.textContent = friendName;
+
+          const domain = document.createElement("p");
+          domain.className = "friend-domain";
+          domain.textContent = domainName;
+
+          const link = document.createElement("a");
+          link.href = friendUrl;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.className = "button";
+          link.textContent = "Visit";
+
+          card.appendChild(badge);
+          card.appendChild(name);
+          card.appendChild(domain);
+          card.appendChild(link);
+          friendsTarget.appendChild(card);
+        });
+      }
+    })
+    .catch(err => console.error("Error loading socials.json:", err));
 });
