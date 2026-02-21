@@ -37,14 +37,54 @@ function createImageViewer() {
   image.className = "collection-viewer-image";
   image.alt = "";
 
-  var caption = document.createElement("p");
+  var prevBtn = document.createElement("button");
+  prevBtn.className = "collection-viewer-arrow collection-viewer-prev";
+  prevBtn.type = "button";
+  prevBtn.textContent = "<";
+  prevBtn.setAttribute("aria-label", "Previous image");
+
+  var nextBtn = document.createElement("button");
+  nextBtn.className = "collection-viewer-arrow collection-viewer-next";
+  nextBtn.type = "button";
+  nextBtn.textContent = ">";
+  nextBtn.setAttribute("aria-label", "Next image");
+
+  var caption = document.createElement("div");
   caption.className = "collection-viewer-caption";
+  var captionTitle = document.createElement("p");
+  captionTitle.className = "collection-viewer-caption-title";
+  var captionMeta = document.createElement("p");
+  captionMeta.className = "collection-viewer-caption-meta";
+  var captionNotes = document.createElement("p");
+  captionNotes.className = "collection-viewer-caption-notes";
+  caption.appendChild(captionTitle);
+  caption.appendChild(captionMeta);
+  caption.appendChild(captionNotes);
 
   dialog.appendChild(closeBtn);
+  dialog.appendChild(prevBtn);
   dialog.appendChild(image);
+  dialog.appendChild(nextBtn);
   dialog.appendChild(caption);
   overlay.appendChild(dialog);
   document.body.appendChild(overlay);
+
+  var galleryItems = [];
+  var currentIndex = -1;
+
+  function renderCurrent() {
+    if (!galleryItems.length || currentIndex < 0) return;
+    var item = galleryItems[currentIndex];
+    image.src = item.src;
+    image.alt = item.alt || "";
+    captionTitle.textContent = item.title || "";
+    captionMeta.textContent = item.meta || "";
+    captionNotes.textContent = item.notes || "";
+    captionNotes.style.display = item.notes ? "block" : "none";
+    var showArrows = galleryItems.length > 1;
+    prevBtn.style.display = showArrows ? "grid" : "none";
+    nextBtn.style.display = showArrows ? "grid" : "none";
+  }
 
   function close() {
     overlay.classList.remove("is-open");
@@ -52,27 +92,50 @@ function createImageViewer() {
     document.body.classList.remove("viewer-open");
   }
 
-  function open(src, alt, captionText) {
-    image.src = src;
-    image.alt = alt || "";
-    caption.textContent = captionText || "";
+  function openIndex(index) {
+    if (!galleryItems.length) return;
+    currentIndex = (index + galleryItems.length) % galleryItems.length;
+    renderCurrent();
     overlay.classList.add("is-open");
     overlay.setAttribute("aria-hidden", "false");
     document.body.classList.add("viewer-open");
   }
 
+  function openByKey(key) {
+    var idx = galleryItems.findIndex(function (item) {
+      return item.key === key;
+    });
+    if (idx === -1) return;
+    openIndex(idx);
+  }
+
+  function setItems(items) {
+    galleryItems = Array.isArray(items) ? items : [];
+    currentIndex = -1;
+    renderCurrent();
+  }
+
   closeBtn.addEventListener("click", close);
+  prevBtn.addEventListener("click", function () {
+    openIndex(currentIndex - 1);
+  });
+  nextBtn.addEventListener("click", function () {
+    openIndex(currentIndex + 1);
+  });
   overlay.addEventListener("click", function (event) {
     if (event.target === overlay) close();
   });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") close();
+    if (!overlay.classList.contains("is-open")) return;
+    if (event.key === "ArrowLeft") openIndex(currentIndex - 1);
+    if (event.key === "ArrowRight") openIndex(currentIndex + 1);
   });
 
-  return { open: open, close: close };
+  return { setItems: setItems, openByKey: openByKey, close: close };
 }
 
-function makeItemCard(item, categoryMap, overCategoryMap, viewer) {
+function makeItemCard(item, categoryMap, overCategoryMap, viewer, itemKey) {
   var card = document.createElement("article");
   card.className = "collection-item";
   card.id = "collection-item-" + slugify(item.title);
@@ -105,11 +168,7 @@ function makeItemCard(item, categoryMap, overCategoryMap, viewer) {
 
     thumbBtn.appendChild(thumbImg);
     thumbBtn.addEventListener("click", function () {
-      viewer.open(
-        item.image,
-        item.imageAlt || item.title || "Collection item image",
-        item.title || ""
-      );
+      viewer.openByKey(itemKey);
     });
     card.appendChild(thumbBtn);
   }
@@ -148,6 +207,7 @@ function renderCollection(data) {
 
   var overCategoryMap = indexById(overCategories);
   var categoryMap = indexById(categories);
+  var viewerItems = [];
 
   root.innerHTML = "";
 
@@ -194,13 +254,31 @@ function renderCollection(data) {
       section.appendChild(none);
     } else {
       overCategoryItems.forEach(function (item) {
-        cards.appendChild(makeItemCard(item, categoryMap, overCategoryMap, viewer));
+        var itemKey = "collection-item-" + slugify(item.title);
+        if (item.image) {
+          var category = categoryMap[item.category];
+          var overCategory = overCategoryMap[item.overCategory];
+          var categoryLabel = category ? category.label : "Uncategorized";
+          var overCategoryLabel = overCategory ? overCategory.label : "Other";
+          var status = item.status ? " - " + item.status : "";
+          viewerItems.push({
+            key: itemKey,
+            src: item.image,
+            alt: item.imageAlt || item.title || "Collection item image",
+            title: item.title || "",
+            meta: overCategoryLabel + " / " + categoryLabel + status,
+            notes: item.notes || ""
+          });
+        }
+        cards.appendChild(makeItemCard(item, categoryMap, overCategoryMap, viewer, itemKey));
       });
       section.appendChild(cards);
     }
 
     root.appendChild(section);
   });
+
+  viewer.setItems(viewerItems);
 
   if (window.applyHashTargetHighlight) {
     window.applyHashTargetHighlight();
