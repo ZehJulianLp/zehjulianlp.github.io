@@ -16,6 +16,117 @@ if (age1) {
     age1.textContent = "Welcome to the webpage of Julian (he/they, "+ age + ").";
 }
 
+function buildSlug(value) {
+    return String(value || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+}
+
+function getHashTarget() {
+    var hash = window.location.hash || "";
+    if (!hash.startsWith("#")) return null;
+    var id = decodeURIComponent(hash.slice(1));
+    if (!id) return null;
+    return document.getElementById(id);
+}
+
+function applyHashTargetHighlight() {
+    var target = getHashTarget();
+    if (!target) return;
+
+    target.classList.add("hash-target");
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.setTimeout(function () {
+        target.classList.remove("hash-target");
+    }, 2200);
+}
+
+function addNavbarSearch() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar || navbar.querySelector(".site-search")) return;
+
+    var form = document.createElement("form");
+    form.className = "site-search";
+    form.action = "/search/";
+    form.method = "get";
+    form.setAttribute("role", "search");
+
+    var input = document.createElement("input");
+    input.type = "search";
+    input.name = "q";
+    input.placeholder = "Search website...";
+    input.setAttribute("aria-label", "Search website");
+
+    var button = document.createElement("button");
+    button.type = "submit";
+    button.textContent = "Search";
+
+    form.appendChild(input);
+    form.appendChild(button);
+    navbar.appendChild(form);
+}
+
+function initMobileNavbar() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar || navbar.querySelector(".navbar-toggle")) return;
+
+    var navContainer = navbar.querySelector(".nav, .nav-items");
+    if (!navContainer) return;
+
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "navbar-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", "site-main-nav");
+    toggle.setAttribute("aria-label", "Toggle navigation");
+    toggle.innerHTML = "<span></span><span></span><span></span>";
+
+    navContainer.id = "site-main-nav";
+
+    var logo = navbar.querySelector(".logo");
+    if (logo && logo.nextSibling) {
+        navbar.insertBefore(toggle, logo.nextSibling);
+    } else {
+        navbar.appendChild(toggle);
+    }
+
+    function closeMenu() {
+        navbar.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+    }
+
+    toggle.addEventListener("click", function () {
+        var isOpen = navbar.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    navbar.querySelectorAll(".navitem a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            if (window.matchMedia("(max-width: 767px)").matches) closeMenu();
+        });
+    });
+
+    window.addEventListener("resize", function () {
+        if (!window.matchMedia("(max-width: 767px)").matches) closeMenu();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeMenu();
+    });
+}
+
+window.applyHashTargetHighlight = applyHashTargetHighlight;
+window.buildSlug = buildSlug;
+
+document.addEventListener("DOMContentLoaded", function () {
+    addNavbarSearch();
+    initMobileNavbar();
+    window.setTimeout(applyHashTargetHighlight, 100);
+});
+
 const spotlightImage = document.getElementById("spotlight-image");
 const spotlightTitle = document.getElementById("spotlight-title");
 const spotlightDescription = document.getElementById("spotlight-description");

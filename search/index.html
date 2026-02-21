@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Search across Julian's corner and jump directly to matching sections.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://zehjulianlp.github.io/search/">
+    <link rel="stylesheet" href="../style.css">
+    <title>Julian's corner - Search</title>
+    <link rel="icon" href="../img/logo.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://hiseel.carrd.co/" target="_blank">
+                <img src="../img/logo.png" alt="logo" width="100px" class="logo">
+            </a>
+        </div>
+        <div class="nav">
+            <div class="navitem">
+                <a href="../">Home</a>
+            </div>
+            <div class="navitem">
+                <a href="../about/">About Me</a>
+            </div>
+            <div class="navitem">
+                <a href="../projects/">Projects</a>
+            </div>
+            <div class="navitem">
+                <a href="../collection/">Collection</a>
+            </div>
+            <div class="navitem">
+                <a href="../dragon-stuff/">Dragon Stuff</a>
+            </div>
+            <div class="navitem">
+                <a href="../guestbook/">Guestbook</a>
+            </div>
+            <div class="navitem">
+                <a href="../socials/">Social Media</a>
+            </div>
+            <div class="navitem selected">
+                <a href="#">Search</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Site Search</h1>
+    </div>
+
+    <div class="contentbox search-page-box">
+        <form id="search-form" class="search-page-form" action="/search/" method="get">
+            <label class="search-page-label" for="search-query">Search the whole website</label>
+            <div class="search-page-row">
+                <input id="search-query" name="q" type="search" required placeholder="Type a keyword..." />
+                <button type="submit" class="button">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contentbox search-page-box">
+        <p id="search-status" class="normaltext"></p>
+        <div id="search-results" class="search-results"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="search-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

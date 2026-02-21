@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const socialsTarget = document.getElementById("socials-main");
   const friendsTarget = document.getElementById("friends-container");
 
+  function slugify(value) {
+    if (window.buildSlug) return window.buildSlug(value);
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
   function getInitials(name) {
     const cleaned = name.replace(/[^a-zA-Z0-9\s]/g, " ").trim();
     const parts = cleaned.split(/\s+/).filter(Boolean);
@@ -69,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         socials.forEach(social => {
           const box = document.createElement("div");
           box.classList.add("social-box");
+          box.id = "social-" + slugify(social.title);
 
           const icon = document.createElement("object");
           icon.setAttribute("data", social.image);
@@ -108,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           const card = document.createElement("article");
           card.className = "social-box friend-box";
+          card.id = "friend-" + slugify(friendName);
 
           const badge = document.createElement("div");
           badge.className = "friend-badge";
@@ -146,6 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
           card.appendChild(link);
           friendsTarget.appendChild(card);
         });
+      }
+
+      if (window.applyHashTargetHighlight) {
+        window.applyHashTargetHighlight();
       }
     })
     .catch(err => console.error("Error loading socials.json:", err));

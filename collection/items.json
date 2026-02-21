@@ -1,0 +1,74 @@
+{
+  "overCategories": [
+    {
+      "id": "example-overcategory-1",
+      "label": "Example Overcategory 1",
+      "description": "Example description for the first overcategory."
+    },
+    {
+      "id": "example-overcategory-2",
+      "label": "Example Overcategory 2",
+      "description": "Example description for the second overcategory."
+    }
+  ],
+  "categories": [
+    {
+      "id": "example-category-a",
+      "label": "Example Category A",
+      "overCategory": "example-overcategory-1"
+    },
+    {
+      "id": "example-category-b",
+      "label": "Example Category B",
+      "overCategory": "example-overcategory-1"
+    },
+    {
+      "id": "example-category-c",
+      "label": "Example Category C",
+      "overCategory": "example-overcategory-2"
+    },
+    {
+      "id": "example-category-d",
+      "label": "Example Category D",
+      "overCategory": "example-overcategory-2"
+    }
+  ],
+  "items": [
+    {
+      "title": "Example Plush 01",
+      "overCategory": "example-overcategory-1",
+      "category": "example-category-a",
+      "status": "Example Status",
+      "notes": "Example description for your first plush item.",
+      "image": "example-item.svg",
+      "imageAlt": "Example plush thumbnail"
+    },
+    {
+      "title": "Example Plush 02",
+      "overCategory": "example-overcategory-1",
+      "category": "example-category-b",
+      "status": "Example Status",
+      "notes": "Another example plush entry.",
+      "image": "example-item.svg",
+      "imageAlt": "Example plush thumbnail"
+    },
+    {
+      "title": "Example LEGO Set 01",
+      "overCategory": "example-overcategory-2",
+      "category": "example-category-c",
+      "status": "Example Status",
+      "notes": "Example vehicle set entry.",
+      "image": "example-item.svg",
+      "imageAlt": "Example LEGO vehicle thumbnail"
+    },
+    {
+      "title": "Example LEGO Set 02",
+      "overCategory": "example-overcategory-2",
+      "category": "example-category-d",
+      "status": "Example Status",
+      "notes": "Example architecture set entry.",
+      "image": "example-item.svg",
+      "imageAlt": "Example LEGO architecture thumbnail"
+    }
+  ]
+}

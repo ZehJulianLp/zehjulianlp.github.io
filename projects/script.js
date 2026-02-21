@@ -10,9 +10,21 @@ function loadProjects() {
         return [];
     }
 }
+
+function slugify(value) {
+    if (window.buildSlug) return window.buildSlug(value);
+    return String(value || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+}
+
 function createProjectElement(project) {
     var projectElement = document.createElement('div');
     projectElement.className = 'project';
+    projectElement.id = 'project-' + slugify(project.title);
 
     var imageElement = document.createElement('img');
     imageElement.src = project.image;
@@ -61,6 +73,10 @@ function renderProjects(projects) {
         var projectElement = createProjectElement(project);
         projectsElement.appendChild(projectElement);
     });
+
+    if (window.applyHashTargetHighlight) {
+        window.applyHashTargetHighlight();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
