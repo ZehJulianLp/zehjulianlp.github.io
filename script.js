@@ -118,12 +118,38 @@ function initMobileNavbar() {
     });
 }
 
+function focusSearchInput() {
+    var searchInput = document.querySelector(".site-search input[name='q']");
+    if (!searchInput) return false;
+
+    var navbar = document.querySelector(".navbar");
+    if (navbar && window.matchMedia("(max-width: 767px)").matches && !navbar.classList.contains("is-open")) {
+        navbar.classList.add("is-open");
+        var toggle = navbar.querySelector(".navbar-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "true");
+    }
+
+    searchInput.focus();
+    searchInput.select();
+    return true;
+}
+
+function initSearchShortcut() {
+    document.addEventListener("keydown", function (event) {
+        var isShortcut = (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k";
+        if (!isShortcut) return;
+        event.preventDefault();
+        focusSearchInput();
+    });
+}
+
 window.applyHashTargetHighlight = applyHashTargetHighlight;
 window.buildSlug = buildSlug;
 
 document.addEventListener("DOMContentLoaded", function () {
     addNavbarSearch();
     initMobileNavbar();
+    initSearchShortcut();
     window.setTimeout(applyHashTargetHighlight, 100);
 });
 
