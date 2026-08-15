@@ -38,9 +38,10 @@
   <div class="gallery-thumbs" id="galleryThumbs" aria-label="Image thumbnails"></div>
 
   <!-- Viewer mit Pfeilen -->
-  <div class="gallery-viewer">
+  <div class="gallery-viewer" id="galleryViewer">
     <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
     <img id="galleryMain" alt="">
+    <button class="gallery-expand" id="galleryOpen" type="button" aria-label="Open image in fullscreen">⛶ <span>View large</span></button>
     <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
   </div>
 
@@ -53,6 +54,22 @@
     <div id="galleryDesc" class="gallery-desc"></div>
   </div>
 </div>
+
+<dialog class="gallery-lightbox" id="galleryLightbox" aria-label="Large image viewer">
+  <div class="gallery-lightbox-inner">
+    <button class="gallery-lightbox-close" id="galleryClose" type="button" aria-label="Close large image viewer">×</button>
+    <button class="gallery-lightbox-arrow gallery-lightbox-prev" id="galleryLightboxPrev" type="button" aria-label="Previous image">‹</button>
+    <figure class="gallery-lightbox-figure">
+      <img id="galleryLightboxImage" alt="">
+      <figcaption class="gallery-lightbox-caption">
+        <span id="galleryLightboxCounter"></span>
+        <span id="galleryLightboxArtist"></span>
+        <span id="galleryLightboxDesc"></span>
+      </figcaption>
+    </figure>
+    <button class="gallery-lightbox-arrow gallery-lightbox-next" id="galleryLightboxNext" type="button" aria-label="Next image">›</button>
+  </div>
+</dialog>
 
 
 
@@ -133,9 +150,19 @@
     const artistEl  = document.getElementById('galleryArtist');
     const counterEl = document.getElementById('galleryCounter');
     const descEl    = document.getElementById('galleryDesc');
+    const openBtn   = document.getElementById('galleryOpen');
+    const lightbox  = document.getElementById('galleryLightbox');
+    const closeBtn  = document.getElementById('galleryClose');
+    const lightboxPrev = document.getElementById('galleryLightboxPrev');
+    const lightboxNext = document.getElementById('galleryLightboxNext');
+    const lightboxImg = document.getElementById('galleryLightboxImage');
+    const lightboxCounter = document.getElementById('galleryLightboxCounter');
+    const lightboxArtist = document.getElementById('galleryLightboxArtist');
+    const lightboxDesc = document.getElementById('galleryLightboxDesc');
 
     // Guard: Falls die Gallery auf dieser Seite nicht existiert, sauber aussteigen
-    if (!thumbsEl || !mainImgEl || !prevBtn || !nextBtn || !artistEl || !counterEl || !descEl) {
+    if (!thumbsEl || !mainImgEl || !prevBtn || !nextBtn || !artistEl || !counterEl || !descEl ||
+        !openBtn || !lightbox || !closeBtn || !lightboxPrev || !lightboxNext || !lightboxImg) {
       console.warn('[Gallery] Elements not found on this page. Skipping init.');
       return;
     }
@@ -208,6 +235,10 @@
           descEl.textContent = '';
           descEl.style.display = 'none';
         }
+
+        lightboxCounter.textContent = `${current + 1} / ${images.length}`;
+        lightboxArtist.textContent = item.artist ? `Artist: ${item.artist}` : '';
+        lightboxDesc.textContent = desc;
       }
 
       function show(i) {
@@ -215,6 +246,8 @@
         const item = images[current] || {};
         mainImgEl.src = item.src || '';
         mainImgEl.alt = item.alt || `Image ${current + 1}`;
+        lightboxImg.src = item.src || '';
+        lightboxImg.alt = item.alt || `Image ${current + 1}`;
         updateActiveThumb();
         updateCaption();
         preload(current + 1);
@@ -224,11 +257,38 @@
       // Controls
       prevBtn.addEventListener('click', () => show(current - 1));
       nextBtn.addEventListener('click', () => show(current + 1));
+      lightboxPrev.addEventListener('click', () => show(current - 1));
+      lightboxNext.addEventListener('click', () => show(current + 1));
+
+      openBtn.addEventListener('click', () => {
+        lightbox.showModal();
+        document.body.classList.add('gallery-is-open');
+        closeBtn.focus();
+      });
+
+      function closeLightbox() {
+        if (lightbox.open) lightbox.close();
+      }
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+      lightbox.addEventListener('close', () => {
+        document.body.classList.remove('gallery-is-open');
+        openBtn.focus();
+      });
 
       // Keyboard support
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft')  show(current - 1);
-        if (e.key === 'ArrowRight') show(current + 1);
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          show(current - 1);
+        }
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          show(current + 1);
+        }
       });
 
       // Init

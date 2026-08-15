@@ -81,9 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
           box.classList.add("social-box");
           box.id = "social-" + slugify(social.title);
 
-          const icon = document.createElement("object");
-          icon.setAttribute("data", social.image);
-          icon.setAttribute("type", "image/svg+xml");
+          const icon = document.createElement("img");
+          icon.src = social.image;
+          icon.alt = `${social.title} icon`;
+          icon.loading = "eager";
+          icon.decoding = "async";
           icon.classList.add("social-icon");
 
           const text = document.createElement("div");
