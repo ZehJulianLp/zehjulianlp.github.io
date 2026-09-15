@@ -1,0 +1,1010 @@
+{
+  "groups": [
+    {
+      "id": "building",
+      "title": "Building & management"
+    },
+    {
+      "id": "transport",
+      "title": "Transport & simulation"
+    },
+    {
+      "id": "strategy",
+      "title": "Strategy & cards"
+    },
+    {
+      "id": "puzzles",
+      "title": "Puzzles & stories"
+    },
+    {
+      "id": "adventure",
+      "title": "Adventure & platformers"
+    },
+    {
+      "id": "action",
+      "title": "Action & survival"
+    },
+    {
+      "id": "party",
+      "title": "Party & social"
+    },
+    {
+      "id": "arcade",
+      "title": "Arcade & experiments"
+    }
+  ],
+  "games": [
+    {
+      "id": "among-us",
+      "title": "Among Us",
+      "group": "party",
+      "description": "Complete tasks with a spaceship crew while trying to work out who is sabotaging the mission.",
+      "genre": "Social deduction",
+      "modes": [
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/945360/"
+        }
+      ]
+    },
+    {
+      "id": "ark-survival-evolved",
+      "title": "ARK: Survival Evolved",
+      "group": "action",
+      "description": "Gather resources, build a base and tame prehistoric creatures on an island shared with other survivors.",
+      "genre": "Survival sandbox",
+      "modes": [
+        "Single-player",
+        "Co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/346110/"
+        }
+      ]
+    },
+    {
+      "id": "ark-survival-of-the-fittest",
+      "title": "ARK: Survival Of The Fittest",
+      "group": "action",
+      "description": "ARK's competitive spin-off, where tribes tame creatures and lead dinosaur armies into a last-team-standing battle.",
+      "genre": "Battle royale",
+      "modes": [
+        "Co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/407530/"
+        }
+      ]
+    },
+    {
+      "id": "balatro",
+      "title": "Balatro",
+      "group": "strategy",
+      "description": "Build scoring combinations from poker hands, jokers and upgraded cards across a series of increasingly demanding rounds.",
+      "genre": "Deckbuilding roguelike",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2379780/"
+        }
+      ]
+    },
+    {
+      "id": "beamng-drive",
+      "title": "BeamNG.drive",
+      "group": "transport",
+      "description": "A vehicle sandbox with soft-body physics, detailed crashes and room to experiment with different driving scenarios.",
+      "genre": "Driving simulation",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/284160/"
+        }
+      ]
+    },
+    {
+      "id": "bloons-td-6",
+      "title": "Bloons TD 6",
+      "group": "strategy",
+      "description": "Place and upgrade monkey towers to stop waves of balloons from reaching the end of the track.",
+      "genre": "Tower defence",
+      "modes": [
+        "Single-player",
+        "Online co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/960090/"
+        }
+      ]
+    },
+    {
+      "id": "brawlhalla",
+      "title": "Brawlhalla",
+      "group": "action",
+      "description": "Fight on small platform arenas and knock opponents off the stage, locally or online.",
+      "genre": "Platform fighter",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Local co-op",
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/291550/"
+        }
+      ]
+    },
+    {
+      "id": "brotato",
+      "title": "Brotato",
+      "group": "action",
+      "description": "Survive waves of aliens as a potato carrying several weapons, combining items and traits into different builds.",
+      "genre": "Arena roguelite",
+      "modes": [
+        "Single-player",
+        "Local co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1942280/"
+        }
+      ]
+    },
+    {
+      "id": "buckshot-roulette",
+      "title": "Buckshot Roulette",
+      "group": "action",
+      "description": "A tabletop horror game built around shotgun roulette, uncertain odds and items that change the next move.",
+      "genre": "Horror & strategy",
+      "modes": [
+        "Single-player",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2835570/"
+        }
+      ]
+    },
+    {
+      "id": "chris-sawyer-s-locomotion",
+      "title": "Chris Sawyer's Locomotion",
+      "group": "transport",
+      "description": "Build a transport company and connect towns and industries in Chris Sawyer's transport simulation.",
+      "genre": "Transport management",
+      "modes": [
+        "Single-player",
+        "Multiplayer"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/356430/"
+        }
+      ]
+    },
+    {
+      "id": "cities-skylines",
+      "title": "Cities: Skylines",
+      "group": "building",
+      "description": "Plan a city and manage the roads, services and infrastructure that keep it running.",
+      "genre": "City builder",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/255710/"
+        }
+      ]
+    },
+    {
+      "id": "cities-skylines-ii",
+      "title": "Cities: Skylines II",
+      "group": "building",
+      "description": "Develop a city from a small settlement into a metropolis, balancing its infrastructure, economy and growth.",
+      "genre": "City builder",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/949230/"
+        }
+      ]
+    },
+    {
+      "id": "content-warning",
+      "title": "Content Warning",
+      "group": "action",
+      "description": "Explore dangerous places with friends, film the strange things you encounter and try to return with the footage.",
+      "genre": "Co-op horror",
+      "modes": [
+        "Online co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2881650/"
+        }
+      ]
+    },
+    {
+      "id": "disney-planes",
+      "title": "Disney Planes",
+      "group": "adventure",
+      "description": "Fly as Dusty and other characters from Planes through missions, races and free-flight areas inspired by the film.",
+      "genre": "Arcade flying",
+      "modes": [
+        "Single-player",
+        "Local multiplayer"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/286880/"
+        }
+      ]
+    },
+    {
+      "id": "europa-universalis-iv",
+      "title": "Europa Universalis IV",
+      "group": "strategy",
+      "description": "Guide a country through centuries of history using diplomacy, trade, expansion and war.",
+      "genre": "Grand strategy",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/236850/"
+        }
+      ]
+    },
+    {
+      "id": "geometry-dash",
+      "title": "Geometry Dash",
+      "group": "adventure",
+      "description": "Jump and fly through obstacle courses where precise timing follows the music.",
+      "genre": "Rhythm platformer",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/322170/"
+        }
+      ]
+    },
+    {
+      "id": "get-to-work",
+      "title": "Get To Work",
+      "group": "adventure",
+      "description": "Climb a literal corporate ladder on rollerblades, navigating ramps, gaps and awkward obstacles without falling back down.",
+      "genre": "Precision platformer",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2706170/"
+        }
+      ]
+    },
+    {
+      "id": "golf-it",
+      "title": "Golf It!",
+      "group": "party",
+      "description": "Play physics-based minigolf courses with friends and build new ones in the course editor.",
+      "genre": "Minigolf",
+      "modes": [
+        "Single-player",
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/571740/"
+        }
+      ]
+    },
+    {
+      "id": "half-life",
+      "title": "Half-Life",
+      "group": "adventure",
+      "description": "Follow Gordon Freeman through the aftermath of a failed experiment at the Black Mesa research facility.",
+      "genre": "First-person shooter",
+      "modes": [
+        "Single-player",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/70/"
+        }
+      ]
+    },
+    {
+      "id": "hogwarts-legacy",
+      "title": "Hogwarts Legacy",
+      "group": "adventure",
+      "description": "Explore Hogwarts and the surrounding wizarding world, learn spells and follow a story set before the Harry Potter books.",
+      "genre": "Open-world action RPG",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/990080/"
+        }
+      ]
+    },
+    {
+      "id": "hollow-knight",
+      "title": "Hollow Knight",
+      "group": "adventure",
+      "description": "Explore a ruined underground kingdom, fight its inhabitants and open new paths through interconnected areas.",
+      "genre": "Metroidvania",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/367520/"
+        }
+      ]
+    },
+    {
+      "id": "mage-arena",
+      "title": "Mage Arena",
+      "group": "action",
+      "description": "Cast spells by speaking their names and work with your team in battles between rival magic users.",
+      "genre": "Voice-controlled arena combat",
+      "modes": [
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/3716600/"
+        }
+      ]
+    },
+    {
+      "id": "minecraft",
+      "title": "Minecraft",
+      "group": "building",
+      "description": "Build with blocks, explore and survive in shared worlds. Also where I work on Redstone & Rails.",
+      "genre": "Sandbox & survival",
+      "modes": [
+        "Single-player",
+        "Multiplayer",
+        "Co-op"
+      ],
+      "links": [
+        {
+          "label": "Minecraft ↗",
+          "url": "https://www.minecraft.net/en-us/about-minecraft"
+        },
+        {
+          "label": "Redstone & Rails",
+          "url": "projects/#project-redstone-rails"
+        }
+      ]
+    },
+    {
+      "id": "mini-metro",
+      "title": "Mini Metro",
+      "group": "transport",
+      "description": "Draw subway lines between stations and keep a growing city moving with a limited supply of trains and routes.",
+      "genre": "Network planning",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/287980/"
+        }
+      ]
+    },
+    {
+      "id": "mini-motorways",
+      "title": "Mini Motorways",
+      "group": "transport",
+      "description": "Build and adjust a city's road network as new homes and destinations put pressure on your routes.",
+      "genre": "Traffic planning",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1127500/"
+        }
+      ]
+    },
+    {
+      "id": "mirror-s-edge-catalyst",
+      "title": "Mirror's Edge Catalyst",
+      "group": "adventure",
+      "description": "Run across rooftops as Faith, using parkour to move through the city of Glass and its story.",
+      "genre": "First-person parkour",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1233570/"
+        }
+      ]
+    },
+    {
+      "id": "nothing",
+      "title": "Nothing",
+      "group": "arcade",
+      "description": "A small game built around doing nothing.",
+      "genre": "Minimalist experiment",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam search ↗",
+          "url": "https://store.steampowered.com/search/?term=Nothing"
+        }
+      ]
+    },
+    {
+      "id": "openttd",
+      "title": "OpenTTD",
+      "group": "transport",
+      "description": "Build passenger and freight networks by rail, road, water and air in an open-source take on Transport Tycoon Deluxe.",
+      "genre": "Transport management",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1536610/"
+        }
+      ]
+    },
+    {
+      "id": "papers-please",
+      "title": "Papers, Please",
+      "group": "puzzles",
+      "description": "Inspect travel documents at a border checkpoint while balancing changing rules, difficult decisions and your family's needs.",
+      "genre": "Document-checking simulation",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/239030/"
+        }
+      ]
+    },
+    {
+      "id": "pinball-fx",
+      "title": "Pinball FX",
+      "group": "arcade",
+      "description": "Play digital pinball tables with different layouts and themes, aiming for high scores.",
+      "genre": "Pinball",
+      "modes": [
+        "Single-player",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2328760/"
+        }
+      ]
+    },
+    {
+      "id": "plague-inc-evolved",
+      "title": "Plague Inc: Evolved",
+      "group": "strategy",
+      "description": "Evolve a pathogen and adapt its spread as the world responds with research and countermeasures.",
+      "genre": "Strategy simulation",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/246620/"
+        }
+      ]
+    },
+    {
+      "id": "planet-coaster",
+      "title": "Planet Coaster",
+      "group": "building",
+      "description": "Build roller coasters, shape a theme park and manage the visitors, staff and services around it.",
+      "genre": "Theme park management",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/493340/"
+        }
+      ]
+    },
+    {
+      "id": "planet-coaster-2",
+      "title": "Planet Coaster 2",
+      "group": "building",
+      "description": "Design and manage a park with roller coasters, pools and water slides, alongside detailed scenery and guest facilities.",
+      "genre": "Theme park management",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2688950/"
+        }
+      ]
+    },
+    {
+      "id": "planet-zoo",
+      "title": "Planet Zoo",
+      "group": "building",
+      "description": "Create animal habitats and manage a zoo, balancing animal welfare, visitors and the work behind the scenes.",
+      "genre": "Zoo management",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/703080/"
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Portal",
+      "group": "puzzles",
+      "description": "Use a portal device to solve physics-based test chambers inside Aperture Science.",
+      "genre": "First-person puzzle",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/400/"
+        }
+      ]
+    },
+    {
+      "id": "portal-2",
+      "title": "Portal 2",
+      "group": "puzzles",
+      "description": "Return to Aperture for more portal puzzles, with a single-player story and a separate two-player co-op campaign.",
+      "genre": "First-person puzzle",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Local co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/620/"
+        }
+      ]
+    },
+    {
+      "id": "portal-stories-mel",
+      "title": "Portal Stories: Mel",
+      "group": "puzzles",
+      "description": "A community-made Portal 2 mod with its own story, following Mel through another part of Aperture's history.",
+      "genre": "Community puzzle campaign",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/317400/"
+        }
+      ]
+    },
+    {
+      "id": "rain-world",
+      "title": "Rain World",
+      "group": "action",
+      "description": "Find food and shelter as a slugcat in an industrial ecosystem where you are both hunter and prey.",
+      "genre": "Survival platformer",
+      "modes": [
+        "Single-player",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/312520/"
+        }
+      ]
+    },
+    {
+      "id": "satisfactory",
+      "title": "Satisfactory",
+      "group": "building",
+      "description": "Explore an alien planet and build connected factories, conveyor networks and production lines, alone or with friends.",
+      "genre": "Factory automation",
+      "modes": [
+        "Single-player",
+        "Online co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/526870/"
+        }
+      ]
+    },
+    {
+      "id": "sid-meier-s-civilization-vi",
+      "title": "Sid Meier's Civilization VI",
+      "group": "strategy",
+      "description": "Develop a civilisation through the ages, expanding cities and choosing paths through research, culture and diplomacy.",
+      "genre": "Turn-based strategy",
+      "modes": [
+        "Single-player",
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/289070/"
+        }
+      ]
+    },
+    {
+      "id": "spyro-reignited-trilogy",
+      "title": "Spyro Reignited Trilogy",
+      "group": "adventure",
+      "description": "Remastered versions of the first three Spyro games, with worlds to explore as a small purple dragon.",
+      "genre": "3D platformer collection",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/996580/"
+        }
+      ]
+    },
+    {
+      "id": "super-animal-royale",
+      "title": "Super Animal Royale",
+      "group": "action",
+      "description": "Compete as an animal in a 2D battle royale, scavenging equipment and trying to outlast the other players.",
+      "genre": "Top-down battle royale",
+      "modes": [
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/843380/"
+        }
+      ]
+    },
+    {
+      "id": "supermarket-together",
+      "title": "Supermarket Together",
+      "group": "building",
+      "description": "Run a supermarket, stock shelves, expand the business and divide the work between friends.",
+      "genre": "Co-op shop management",
+      "modes": [
+        "Single-player",
+        "Online co-op"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2709570/"
+        }
+      ]
+    },
+    {
+      "id": "tabletop-simulator",
+      "title": "Tabletop Simulator",
+      "group": "party",
+      "description": "Move pieces around a physics-based tabletop, play board games and try community-made setups with friends.",
+      "genre": "Board-game sandbox",
+      "modes": [
+        "Single-player",
+        "Online co-op",
+        "Local co-op",
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/286160/"
+        }
+      ]
+    },
+    {
+      "id": "tell-me-why",
+      "title": "Tell Me Why",
+      "group": "puzzles",
+      "description": "Follow twins revisiting their childhood and use their shared memories to uncover what happened in their past.",
+      "genre": "Narrative adventure",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1180660/"
+        }
+      ]
+    },
+    {
+      "id": "the-button",
+      "title": "THE BUTTON",
+      "group": "arcade",
+      "description": "Each button press adds a point, but also increases the chance of losing the points already collected.",
+      "genre": "Clicker experiment",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1999740/"
+        }
+      ]
+    },
+    {
+      "id": "the-jackbox-party-pack-7",
+      "title": "The Jackbox Party Pack 7",
+      "group": "party",
+      "description": "Five party games including Quiplash 3, Champ'd Up and Blather 'Round, played using phones or tablets as controllers.",
+      "genre": "Party game collection",
+      "modes": [
+        "Local party play"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1211630/"
+        }
+      ]
+    },
+    {
+      "id": "the-jackbox-party-pack-9",
+      "title": "The Jackbox Party Pack 9",
+      "group": "party",
+      "description": "Five games including Fibbage 4, Quixort and Roomerang, mixing bluffing, trivia, guessing and improvisation.",
+      "genre": "Party game collection",
+      "modes": [
+        "Local party play"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1850960/"
+        }
+      ]
+    },
+    {
+      "id": "the-jackbox-party-pack-10",
+      "title": "The Jackbox Party Pack 10",
+      "group": "party",
+      "description": "Five party games including Tee K.O. 2, Timejinx and Dodo Re Mi, covering drawing, trivia and group music-making.",
+      "genre": "Party game collection",
+      "modes": [
+        "Local party play"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2216830/"
+        }
+      ]
+    },
+    {
+      "id": "train-sim-world-4",
+      "title": "Train Sim World 4",
+      "group": "transport",
+      "description": "Drive a range of trains on detailed routes, with a training centre for learning the controls.",
+      "genre": "Train simulation",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2362300/"
+        }
+      ]
+    },
+    {
+      "id": "train-sim-world-5",
+      "title": "Train Sim World 5",
+      "group": "transport",
+      "description": "Operate trains across detailed routes and take on different tasks within the railway simulation.",
+      "genre": "Train simulation",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/2967990/"
+        }
+      ]
+    },
+    {
+      "id": "train-sim-world-6",
+      "title": "Train Sim World 6",
+      "group": "transport",
+      "description": "Drive trains across detailed routes and respond to changing situations during the journey.",
+      "genre": "Train simulation",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/3656800/"
+        }
+      ]
+    },
+    {
+      "id": "transport-fever-2",
+      "title": "Transport Fever 2",
+      "group": "transport",
+      "description": "Connect settlements and industries with transport networks on land, water and in the air.",
+      "genre": "Transport management",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/1066780/"
+        }
+      ]
+    },
+    {
+      "id": "ultimate-coaster-x",
+      "title": "Ultimate Coaster X",
+      "group": "building",
+      "description": "Design roller coasters and their surroundings with dedicated editors, then ride what you have built.",
+      "genre": "Roller coaster sandbox",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/734330/"
+        }
+      ]
+    },
+    {
+      "id": "universe-sandbox",
+      "title": "Universe Sandbox",
+      "group": "transport",
+      "description": "Experiment with gravity, planets and collisions in a physics-based simulation of space.",
+      "genre": "Space physics sandbox",
+      "modes": [
+        "Single-player"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/230290/"
+        }
+      ]
+    },
+    {
+      "id": "vrchat",
+      "title": "VRChat",
+      "group": "party",
+      "description": "Explore community-made worlds and meet people through custom avatars, with or without a VR headset.",
+      "genre": "Social sandbox",
+      "modes": [
+        "Online co-op",
+        "Online PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/438100/"
+        }
+      ]
+    },
+    {
+      "id": "who-s-your-daddy",
+      "title": "Who's Your Daddy?!",
+      "group": "party",
+      "description": "An asymmetric household game where one side keeps a baby safe while the other creates as much trouble as possible.",
+      "genre": "Physics party game",
+      "modes": [
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/427730/"
+        }
+      ]
+    },
+    {
+      "id": "zaccaria-pinball",
+      "title": "Zaccaria Pinball",
+      "group": "arcade",
+      "description": "Play digital recreations of Zaccaria pinball machines alongside additional tables and modes.",
+      "genre": "Pinball",
+      "modes": [
+        "Single-player",
+        "Online PvP",
+        "Local PvP"
+      ],
+      "links": [
+        {
+          "label": "Steam ↗",
+          "url": "https://store.steampowered.com/app/444930/"
+        }
+      ]
+    }
+  ]
+}

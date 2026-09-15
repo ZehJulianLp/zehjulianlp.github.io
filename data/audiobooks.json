@@ -1,0 +1,662 @@
+{
+  "groups": [
+    {
+      "id": "science-fiction",
+      "title": "Sci-fi & virtual worlds"
+    },
+    {
+      "id": "dystopias-thrillers",
+      "title": "Dystopias & thrillers"
+    },
+    {
+      "id": "fantasy-dragons",
+      "title": "Fantasy & dragons"
+    },
+    {
+      "id": "harry-potter",
+      "title": "Harry Potter & the wizarding world"
+    },
+    {
+      "id": "humour-satire",
+      "title": "Humour & satire"
+    },
+    {
+      "id": "non-fiction",
+      "title": "Non-fiction"
+    }
+  ],
+  "books": [
+    {
+      "id": "cyber-squad-1",
+      "group": "science-fiction",
+      "title": "Cyber Squad: Level Eins",
+      "authors": [
+        "Anna Mocikat"
+      ],
+      "narrators": [
+        "Kai Seuthe"
+      ],
+      "series": {
+        "title": "Cyber Squad",
+        "volume": 1
+      }
+    },
+    {
+      "id": "cyber-squad-1-3",
+      "group": "science-fiction",
+      "title": "Cyber Squad – Level 1–3",
+      "authors": [
+        "Anna Mocikat"
+      ],
+      "narrators": [
+        "Kai Seuthe"
+      ],
+      "subtitle": "Drei Bücher in Einem",
+      "series": {
+        "title": "Cyber Squad",
+        "volume": 1,
+        "lastVolume": 3
+      }
+    },
+    {
+      "id": "der-marsianer",
+      "group": "science-fiction",
+      "title": "Der Marsianer",
+      "authors": [
+        "Andy Weir"
+      ],
+      "narrators": [
+        "Richard Barenberg"
+      ]
+    },
+    {
+      "id": "ready-player-one",
+      "group": "science-fiction",
+      "title": "Ready Player One",
+      "authors": [
+        "Ernest Cline"
+      ],
+      "narrators": [
+        "David Nathan"
+      ],
+      "series": {
+        "title": "Ready Player",
+        "volume": 1
+      }
+    },
+    {
+      "id": "ready-player-two",
+      "group": "science-fiction",
+      "title": "Ready Player Two",
+      "authors": [
+        "Ernest Cline"
+      ],
+      "narrators": [
+        "David Nathan"
+      ],
+      "series": {
+        "title": "Ready Player",
+        "volume": 2
+      }
+    },
+    {
+      "id": "warcross-1",
+      "group": "science-fiction",
+      "title": "Warcross – Das Spiel ist eröffnet",
+      "authors": [
+        "Marie Lu"
+      ],
+      "narrators": [
+        "Dagmar Bittner"
+      ],
+      "series": {
+        "title": "Warcross",
+        "volume": 1
+      }
+    },
+    {
+      "id": "blackout",
+      "group": "dystopias-thrillers",
+      "title": "Blackout",
+      "authors": [
+        "Marc Elsberg"
+      ],
+      "narrators": [
+        "Steffen Groth"
+      ],
+      "subtitle": "Morgen ist es zu spät"
+    },
+    {
+      "id": "der-circle",
+      "group": "dystopias-thrillers",
+      "title": "Der Circle",
+      "authors": [
+        "Dave Eggers"
+      ],
+      "narrators": [
+        "Torben Kessler"
+      ]
+    },
+    {
+      "id": "daemon-1",
+      "group": "dystopias-thrillers",
+      "title": "Daemon – Die Welt ist nur ein Spiel",
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "narrators": [
+        "Matthias Lühn"
+      ],
+      "series": {
+        "title": "Daemon",
+        "volume": 1
+      }
+    },
+    {
+      "id": "daemon-2",
+      "group": "dystopias-thrillers",
+      "title": "Darknet – Die Welt ist nur ein Spiel",
+      "authors": [
+        "Daniel Suarez"
+      ],
+      "narrators": [
+        "Matthias Lühn"
+      ],
+      "series": {
+        "title": "Daemon",
+        "volume": 2
+      }
+    },
+    {
+      "id": "metro-2033",
+      "group": "dystopias-thrillers",
+      "title": "Metro 2033",
+      "authors": [
+        "Dmitry Glukhovsky"
+      ],
+      "narrators": [
+        "Oliver Brod"
+      ],
+      "series": {
+        "title": "Metro",
+        "volume": 1
+      }
+    },
+    {
+      "id": "die-strasse",
+      "group": "dystopias-thrillers",
+      "title": "Die Straße",
+      "authors": [
+        "Cormac McCarthy"
+      ],
+      "narrators": [
+        "Christian Brückner"
+      ]
+    },
+    {
+      "id": "panem-1",
+      "group": "dystopias-thrillers",
+      "title": "Tödliche Spiele",
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "narrators": [
+        "Maria Koschny"
+      ],
+      "series": {
+        "title": "Die Tribute von Panem",
+        "volume": 1
+      }
+    },
+    {
+      "id": "eragon-1",
+      "group": "fantasy-dragons",
+      "title": "Eragon – Das Vermächtnis der Drachenreiter",
+      "authors": [
+        "Christopher Paolini"
+      ],
+      "narrators": [
+        "Andreas Fröhlich"
+      ],
+      "series": {
+        "title": "Eragon",
+        "volume": 1
+      }
+    },
+    {
+      "id": "fourth-wing-1",
+      "group": "fantasy-dragons",
+      "title": "Fourth Wing – Flammengeküsst",
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "narrators": [
+        "Dagmar Bittner",
+        "Vincent Fallow"
+      ],
+      "series": {
+        "title": "Fourth Wing",
+        "volume": 1
+      },
+      "contributors": [
+        {
+          "name": "Michaela Kolodziejcok",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "zaubererarchiv",
+      "group": "harry-potter",
+      "title": "Aus dem Zaubererarchiv",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Leonie Landa",
+        "Milena Karas",
+        "Christian Zeiger",
+        "Christoph Maria Herbst"
+      ],
+      "subtitle": "Ausgewählte Texte aus der Welt von Harry Potter",
+      "contributors": [
+        {
+          "name": "Evanna Lynch",
+          "role": "Foreword"
+        }
+      ]
+    },
+    {
+      "id": "dumbledore",
+      "group": "harry-potter",
+      "title": "Dumbledore",
+      "authors": [
+        "Irvin Khaytman"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ],
+      "subtitle": "Die inoffizielle Biografie des berühmten Schulleiters von Hogwarts",
+      "contributors": [
+        {
+          "name": "Millicent Shacklebolt",
+          "role": "Editor"
+        }
+      ]
+    },
+    {
+      "id": "geschichte-der-magie",
+      "group": "harry-potter",
+      "title": "Die Geschichte der Magie für Potter-Fans",
+      "authors": [
+        "MuggleNet",
+        "Millicent Shacklebolt",
+        "Wolfgang Beuchelt",
+        "Brigitte Rüßmann"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ]
+    },
+    {
+      "id": "harry-potter-1-manteuffel",
+      "group": "harry-potter",
+      "title": "Harry Potter und der Stein der Weisen",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Felix von Manteuffel"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 1
+      },
+      "contributors": [
+        {
+          "name": "Klaus Fritz",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "harry-potter-2",
+      "group": "harry-potter",
+      "title": "Harry Potter und die Kammer des Schreckens",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 2
+      }
+    },
+    {
+      "id": "harry-potter-3-beck",
+      "group": "harry-potter",
+      "title": "Harry Potter und der Gefangene von Askaban",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Rufus Beck"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 3
+      }
+    },
+    {
+      "id": "harry-potter-4-beck",
+      "group": "harry-potter",
+      "title": "Harry Potter und der Feuerkelch",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Rufus Beck"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 4
+      }
+    },
+    {
+      "id": "harry-potter-5-beck",
+      "group": "harry-potter",
+      "title": "Harry Potter und der Orden des Phönix",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Rufus Beck"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 5
+      }
+    },
+    {
+      "id": "harry-potter-6-beck",
+      "group": "harry-potter",
+      "title": "Harry Potter und der Halbblutprinz",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Rufus Beck"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 6
+      }
+    },
+    {
+      "id": "harry-potter-7-beck",
+      "group": "harry-potter",
+      "title": "Harry Potter und die Heiligtümer des Todes",
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "narrators": [
+        "Rufus Beck"
+      ],
+      "series": {
+        "title": "Harry Potter",
+        "volume": 7
+      }
+    },
+    {
+      "id": "malfoy",
+      "group": "harry-potter",
+      "title": "Malfoy",
+      "authors": [
+        "Irvin Khaytman",
+        "Millicent Shacklebolt",
+        "Annika Tschöpe"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ],
+      "subtitle": "Die inoffizielle Historie der durchtriebensten Familie in der Zaubererwelt"
+    },
+    {
+      "id": "snape",
+      "group": "harry-potter",
+      "title": "Snape",
+      "authors": [
+        "Lorrie Kim"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ],
+      "subtitle": "Die inoffizielle Biografie des gefürchteten Zaubertranklehrers von Hogwarts",
+      "contributors": [
+        {
+          "name": "Millicent Shacklebolt",
+          "role": "Editor"
+        },
+        {
+          "name": "Brigitte Rüßmann",
+          "role": "Translation"
+        },
+        {
+          "name": "Wolfgang Beuchelt",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "zauberer-ausbildung",
+      "group": "harry-potter",
+      "title": "Die ultimative Zauberer-Ausbildung für Potter-Fans",
+      "authors": [
+        "MuggleNet"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ],
+      "subtitle": "Zauberei, Verwandlung, dunkle Künste. Alles, was du über die magischen Schulfächer wissen musst.",
+      "contributors": [
+        {
+          "name": "Millicent Shacklebolt",
+          "role": "Editor"
+        },
+        {
+          "name": "Annika Tschöpe",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "voldemort",
+      "group": "harry-potter",
+      "title": "Voldemort",
+      "authors": [
+        "Grace Candido-Beecher",
+        "Nick Beecher"
+      ],
+      "narrators": [
+        "Michael A. Grimm"
+      ],
+      "subtitle": "Die inoffizielle Biografie des berüchtigten Dunklen Lords",
+      "contributors": [
+        {
+          "name": "Millicent Shacklebolt",
+          "role": "Editor"
+        },
+        {
+          "name": "Wolfgang Beuchelt",
+          "role": "Translation"
+        },
+        {
+          "name": "Brigitte Rüßmann",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "ich-hasse-menschen-1",
+      "group": "humour-satire",
+      "title": "Ich hasse Menschen. Eine Abschweifung",
+      "authors": [
+        "Julius Fischer"
+      ],
+      "narrators": [
+        "Julius Fischer"
+      ],
+      "series": {
+        "title": "Ich hasse Menschen",
+        "volume": 1
+      }
+    },
+    {
+      "id": "ich-hasse-menschen-2",
+      "group": "humour-satire",
+      "title": "Ich hasse Menschen. Eine Art Liebesgeschichte",
+      "authors": [
+        "Julius Fischer"
+      ],
+      "narrators": [
+        "Julius Fischer"
+      ],
+      "series": {
+        "title": "Ich hasse Menschen",
+        "volume": 2
+      }
+    },
+    {
+      "id": "kaenguru-1",
+      "group": "humour-satire",
+      "title": "Die Känguru-Chroniken",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "Die Känguru-Werke",
+        "volume": 1
+      }
+    },
+    {
+      "id": "kaenguru-2",
+      "group": "humour-satire",
+      "title": "Das Känguru-Manifest",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "Die Känguru-Werke",
+        "volume": 2
+      }
+    },
+    {
+      "id": "kaenguru-3",
+      "group": "humour-satire",
+      "title": "Die Känguru-Offenbarung",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "Die Känguru-Werke",
+        "volume": 3
+      }
+    },
+    {
+      "id": "kaenguru-4",
+      "group": "humour-satire",
+      "title": "Die Känguru-Apokryphen",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "Die Känguru-Werke",
+        "volume": 4
+      }
+    },
+    {
+      "id": "kaenguru-5",
+      "group": "humour-satire",
+      "title": "Die Känguru-Rebellion",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "Die Känguru-Werke",
+        "volume": 5
+      }
+    },
+    {
+      "id": "qualityland-1",
+      "group": "humour-satire",
+      "title": "QualityLand",
+      "authors": [
+        "Marc-Uwe Kling"
+      ],
+      "narrators": [
+        "Marc-Uwe Kling"
+      ],
+      "series": {
+        "title": "QualityLand",
+        "volume": 1
+      }
+    },
+    {
+      "id": "das-buch-eltern",
+      "group": "non-fiction",
+      "title": "Das Buch, von dem du dir wünschst, deine Eltern hätten es gelesen",
+      "authors": [
+        "Philippa Perry"
+      ],
+      "narrators": [
+        "Sonngard Dressler"
+      ],
+      "subtitle": "und deine Kinder werden froh sein, wenn du es gelesen hast",
+      "contributors": [
+        {
+          "name": "Karin Schuler",
+          "role": "Translation"
+        }
+      ]
+    },
+    {
+      "id": "das-kapital",
+      "group": "non-fiction",
+      "title": "Das Kapital",
+      "authors": [
+        "Karl Marx"
+      ],
+      "narrators": [
+        "Gert Heidenreich",
+        "Johannes Steck"
+      ],
+      "subtitle": "Kritik der Politischen Ökonomie"
+    },
+    {
+      "id": "maenner-die-die-welt-verbrennen",
+      "group": "non-fiction",
+      "title": "Männer, die die Welt verbrennen",
+      "authors": [
+        "Christian Stöcker"
+      ],
+      "narrators": [
+        "Steffen Rössler"
+      ]
+    }
+  ]
+}

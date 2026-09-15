@@ -1,109 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Personal insights, resources, and reflections around Julian’s dragon identity – written with care and honesty.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://zehjulianlp.github.io/dragon-stuff/">
-    <link rel="stylesheet" href="../style.css">
-    <title>Julian's corner – Dragon Stuff</title>
-    <link rel="icon" href="../img/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dragon stuff — Julian's personal website. Developer, dragon and Minecraft infrastructure nerd.">
+<meta name="theme-color" content="#0b292b">
+<title>Dragon stuff · Julian's corner</title>
+<link rel="icon" href="../assets/img/logo.png">
+<link rel="stylesheet" href="../style.css">
+<script src="../app.js" defer></script>
 </head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="https://hiseel.carrd.co/" target="_blank">
-                <img src="../img/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="nav-items">
-            <div class="navitem"><a href="../">Home</a></div>
-            <div class="navitem"><a href="../about/">About Me</a></div>
-            <div class="navitem"><a href="../projects/">Projects</a></div>
-            <div class="navitem"><a href="../collection/">Collection</a></div>
-            <div class="navitem selected"><a href="#">Dragon Stuff</a></div>
-            <div class="navitem"><a href="../guestbook/">Guestbook</a></div>
-            <div class="navitem"><a href="../socials/">Social Media</a></div>
-        </div>
-    </div>
-
-    <div class="header">
-        <h1>A dragon who likes water</h1>
-    </div>
-
-<div class="contentbox" id="dragon-gallery">
-  <h2>Art Gallery</h2>
-
-  <!-- Thumbnails oben -->
-  <div class="gallery-thumbs" id="galleryThumbs" aria-label="Image thumbnails"></div>
-
-  <!-- Viewer mit Pfeilen -->
-  <div class="gallery-viewer" id="galleryViewer">
-    <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">‹</button>
-    <img id="galleryMain" alt="">
-    <button class="gallery-expand" id="galleryOpen" type="button" aria-label="Open image in fullscreen">⛶ <span>View large</span></button>
-    <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">›</button>
-  </div>
-
-  <!-- Caption: Counter + Artist (groß) + Description (aus alt) -->
-  <div class="gallery-caption">
-    <div class="gallery-meta">
-      <span id="galleryCounter" class="gallery-counter"></span>
-      <span id="galleryArtist" class="gallery-artist"></span>
-    </div>
-    <div id="galleryDesc" class="gallery-desc"></div>
-  </div>
-</div>
-
-<dialog class="gallery-lightbox" id="galleryLightbox" aria-label="Large image viewer">
-  <div class="gallery-lightbox-inner">
-    <button class="gallery-lightbox-close" id="galleryClose" type="button" aria-label="Close large image viewer">×</button>
-    <button class="gallery-lightbox-arrow gallery-lightbox-prev" id="galleryLightboxPrev" type="button" aria-label="Previous image">‹</button>
-    <figure class="gallery-lightbox-figure">
-      <img id="galleryLightboxImage" alt="">
-      <figcaption class="gallery-lightbox-caption">
-        <span id="galleryLightboxCounter"></span>
-        <span id="galleryLightboxArtist"></span>
-        <span id="galleryLightboxDesc"></span>
-      </figcaption>
-    </figure>
-    <button class="gallery-lightbox-arrow gallery-lightbox-next" id="galleryLightboxNext" type="button" aria-label="Next image">›</button>
-  </div>
-</dialog>
-
-
-
-    <div class="contentbox" id="dragon-identity">
-        <h2>So... I'm a dragon.</h2>
+<body data-page="dragon">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="desktop">
+<header class="system-bar"><a href="../" class="system-name"><span aria-hidden="true">✦</span> julianOS <small>/ personal website</small></a><div class="system-actions"><button id="calm-mode" type="button" aria-pressed="false">✧ Calm mode</button><time id="desktop-clock" aria-label="Your local time">--:--</time></div></header>
+<div class="site-masthead"><div><a href="../">Julian's <span>corner</span><span class="pixel-star" aria-hidden="true">✧</span></a><p>a dragon who likes water. and making things.</p></div><span class="masthead-note" aria-hidden="true">somewhere below the surface<br>~ personal space on the web ~</span></div>
+<div class="desktop-layout">
+<aside class="sidebar">
+<section class="window profile-window"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>user.profile</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><a href="../dragon-stuff/" class="avatar-link"><img src="../assets/img/logo.png" width="112" height="112" alt="My blue SeaWing dragon"></a><h2>Hi, I'm Julian.</h2><p class="profile-meta">he / they · <span data-age>22</span> · Germany</p><p>Developer. Dragon.<br>Infrastructure nerd.</p><a class="small-link" href="https://art.hiseel.org/" target="_blank" rel="noopener noreferrer">avatar by Hiseel ↗</a></div></section>
+<nav class="window places-window" aria-label="Main navigation"><div class="titlebar"><span aria-hidden="true">▱</span><span>places</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="nav-links"><a href="../"><span aria-hidden="true">⌂</span>Home</a>
+<a href="../about/"><span aria-hidden="true">☺</span>About me</a>
+<a href="../projects/"><span aria-hidden="true">▱</span>Projects</a>
+<a href="../dragon-stuff/" aria-current="page"><span aria-hidden="true">◇</span>Dragon stuff<span class="nav-arrow" aria-hidden="true">‹</span></a>
+<a href="../collection/"><span aria-hidden="true">▦</span>Collection</a>
+<a href="../now/"><span aria-hidden="true">◷</span>Now</a>
+<a href="../updates/"><span aria-hidden="true">≡</span>Updates</a>
+<a href="../guestbook/"><span aria-hidden="true">✎</span>Guestbook</a>
+<a href="../socials/"><span aria-hidden="true">♡</span>Socials & friends</a><a href="../search/"><span aria-hidden="true">⌕</span>Search<span class="shortcut">Ctrl K</span></a></div></nav>
+<section class="window elsewhere-window"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>elsewhere</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><a class="elsewhere-link" href="https://julianverse.de/" target="_blank" rel="noopener noreferrer">↗ Julianverse.de<small>all the projects & services</small></a><a class="elsewhere-link" href="https://github.com/ZehJulianLp" target="_blank" rel="noopener noreferrer">↗ GitHub<small>code & smaller experiments</small></a></div></section>
+<div class="web-buttons" aria-label="Personal website badges"><a href="../dragon-stuff/" class="web-badge dragon-badge">SEA WING<br><b>AT HEART</b></a><a href="../about/#about-developer" class="web-badge code-badge">HANDMADE<br><b>ON THE WEB</b></a><a href="../guestbook/" class="web-badge guest-badge">LEAVE A<br><b>RAWR! ♡</b></a><a href="../about/#building-values" class="web-badge web-badge-open">OPEN WEB<br><b>SMALL & WEIRD</b></a></div>
+</aside>
+<main id="main" tabindex="-1">
+<div class="location-bar"><span aria-hidden="true">▱</span> home / dragon stuff<span class="location-end" aria-hidden="true">✦</span></div>
+<div class="page-heading"><h1>A dragon who likes water</h1><p>Art, SeaWings and what being a dragon means to me.</p></div>
+<section class="window gallery-window" id="dragon-gallery"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>pictures / art gallery</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><p id="gallery-status" role="status">Loading the gallery…</p><div id="gallery-thumbs" class="gallery-thumbs" aria-label="Choose an artwork"></div><div class="gallery-stage"><button type="button" id="gallery-prev" class="image-arrow" aria-label="Previous image">‹</button><button type="button" id="gallery-open" aria-label="Open artwork in fullscreen" disabled><img id="gallery-image" alt=""><span>View large ⛶</span></button><button type="button" id="gallery-next" class="image-arrow" aria-label="Next image">›</button></div><div id="gallery-caption" class="gallery-caption" aria-live="polite"></div></div></section>
+<section class="window prose-window" id="dragon-identity"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>So... I'm a dragon.</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body">
         <p class="normaltext">
             Yeah, really. It’s not just a metaphor or a cosplay thing. I identify as a dragon — specifically, I feel closest to SeaWings, a type of dragon from the <em>Wings of Fire</em> book series.
         </p>
         <p class="normaltext">
             It’s hard to explain to someone who hasn’t felt it, but the connection is deep and real. When I look at the ocean, when I swim, when I dream — I don’t just feel human. I feel like something more fluid, ancient, and free. That’s where my sense of “being a dragon” lives.
-        </p>
-    </div>
-
-    <div class="contentbox" id="dragon-seawings">
-        <h2>Why SeaWings?</h2>
+        </p></div></section>
+<section class="window prose-window" id="dragon-seawings"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>Why SeaWings?</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body">
         <p class="normaltext">
             SeaWings have always resonated with me. They live in underwater kingdoms, communicate with bioluminescence, and are strong without being aggressive. That calm, intuitive energy feels like home to me.
         </p>
         <p class="normaltext">
             I like water, I like swimming, and I love the idea of a hidden world beneath the surface. I also enjoy rainy weather, glowing lights in the dark, and the peacefulness of deep oceans — all things I associate with SeaWings.
-        </p>
-    </div>
-
-    <div class="contentbox" id="dragon-spiritual">
-        <h2>Spiritual, emotional, personal</h2>
+        </p></div></section>
+<section class="window prose-window" id="dragon-spiritual"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>Spiritual, emotional, personal</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body">
         <p class="normaltext">
             My dragon identity isn’t just a fandom thing. It’s tied to how I experience the world emotionally and spiritually. Through dreams, meditation, and moments of quiet reflection, I keep reconnecting with this part of me.
         </p>
         <p class="normaltext">
             Sometimes I visualize my wings. Sometimes I just feel the presence — calm, strong, and wordless. It’s not about escaping reality — it’s about understanding myself more fully. The dragon isn’t separate from me. It is me.
-        </p>
-    </div>
-    <div class="contentbox" id="dragon-faq">
-  <h2>Frequently Asked Questions (Dragon Edition)</h2>
+        </p></div></section>
+<section class="window prose-window" id="dragon-faq"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>Frequently Asked Questions (Dragon Edition)</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body">
 
   <p class="normaltext"><strong>Are you roleplaying?</strong><br>
   No. This isn't a character or act — it's part of who I am. Being a dragon is a personal identity, not a performance.</p>
@@ -121,184 +73,17 @@
   Not in a negative way. For many of us, it's a way of understanding ourselves better, not a disorder. It brings clarity, grounding, and sometimes even healing.</p>
 
   <p class="normaltext"><strong>Can I ask questions?</strong><br>
-  Yes, if you’re respectful and genuinely curious, I'm always happy to talk. Just remember — this is personal, not a debate topic.</p>
-</div>
-
-
-    <div class="contentbox" id="dragon-questions">
-        <h2>Further Questions?</h2>
+  Yes, if you’re respectful and genuinely curious, I'm always happy to talk. Just remember — this is personal, not a debate topic.</p></div></section>
+<section class="window prose-window" id="dragon-questions"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>Further Questions?</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body">
         <p class="normaltext">
             If you're curious or want to talk about dragons, identity, or anything related — I'm open to friendly conversations. Please be respectful, though. For many of us, this isn't just a quirky phase. It's something deeply personal.
         </p>
         <p class="normaltext">
             You can always reach me on Discord or Twitter. The links are on my social media page.
         </p>
-        <a href="../socials/" class="button">Check out my socials</a>
-    </div>
-
-<script>
-// gallery.js
-(() => {
-  window.addEventListener('DOMContentLoaded', () => {
-    const JSON_PATH = 'images.json'; // gleicher Ordner wie die HTML-Datei
-
-    // DOM refs
-    const thumbsEl  = document.getElementById('galleryThumbs');
-    const mainImgEl = document.getElementById('galleryMain');
-    const prevBtn   = document.getElementById('galleryPrev');
-    const nextBtn   = document.getElementById('galleryNext');
-    const artistEl  = document.getElementById('galleryArtist');
-    const counterEl = document.getElementById('galleryCounter');
-    const descEl    = document.getElementById('galleryDesc');
-    const openBtn   = document.getElementById('galleryOpen');
-    const lightbox  = document.getElementById('galleryLightbox');
-    const closeBtn  = document.getElementById('galleryClose');
-    const lightboxPrev = document.getElementById('galleryLightboxPrev');
-    const lightboxNext = document.getElementById('galleryLightboxNext');
-    const lightboxImg = document.getElementById('galleryLightboxImage');
-    const lightboxCounter = document.getElementById('galleryLightboxCounter');
-    const lightboxArtist = document.getElementById('galleryLightboxArtist');
-    const lightboxDesc = document.getElementById('galleryLightboxDesc');
-
-    // Guard: Falls die Gallery auf dieser Seite nicht existiert, sauber aussteigen
-    if (!thumbsEl || !mainImgEl || !prevBtn || !nextBtn || !artistEl || !counterEl || !descEl ||
-        !openBtn || !lightbox || !closeBtn || !lightboxPrev || !lightboxNext || !lightboxImg) {
-      console.warn('[Gallery] Elements not found on this page. Skipping init.');
-      return;
-    }
-
-    let images = [];
-    let current = 0;
-
-    // Fetch JSON
-    (async () => {
-      try {
-        const res = await fetch(JSON_PATH, { cache: 'no-store' });
-        if (!res.ok) throw new Error(`Failed to load ${JSON_PATH} (${res.status})`);
-        images = await res.json();
-      } catch (err) {
-        console.error('[Gallery] JSON load error:', err);
-        thumbsEl.innerHTML = '<div class="normaltext">No images found.</div>';
-        return;
-      }
-
-      if (!Array.isArray(images) || images.length === 0) {
-        thumbsEl.innerHTML = '<div class="normaltext">No images found.</div>';
-        return;
-      }
-
-      // Thumbnails bauen
-      images.forEach((img, idx) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.setAttribute('aria-label', `Open image ${idx + 1}`);
-        const t = document.createElement('img');
-        t.src = img.src;
-        t.alt = img.alt || `Image ${idx + 1}`;
-        btn.appendChild(t);
-        btn.addEventListener('click', () => show(idx));
-        thumbsEl.appendChild(btn);
-      });
-
-      // Helpers
-      function preload(i) {
-        const img = new Image();
-        const item = images[(i + images.length) % images.length];
-        if (item && item.src) img.src = item.src;
-      }
-
-      function updateActiveThumb() {
-        const buttons = thumbsEl.querySelectorAll('button');
-        buttons.forEach(b => b.classList.remove('is-active'));
-        if (buttons[current]) buttons[current].classList.add('is-active');
-      }
-
-      function updateCaption() {
-        const item = images[current] || {};
-        counterEl.textContent = `${current + 1} / ${images.length}`;
-
-        // Artist prominent + Link optional
-        if (item.artist && item.artistUrl) {
-          artistEl.innerHTML = `Artist: <a href="${item.artistUrl}" target="_blank" rel="noopener">${item.artist}</a>`;
-        } else if (item.artist) {
-          artistEl.textContent = `Artist: ${item.artist}`;
-        } else {
-          artistEl.textContent = '';
-        }
-
-        // Description = ALT
-        const desc = item.alt || '';
-        if (desc) {
-          descEl.textContent = desc;
-          descEl.style.display = '';
-        } else {
-          descEl.textContent = '';
-          descEl.style.display = 'none';
-        }
-
-        lightboxCounter.textContent = `${current + 1} / ${images.length}`;
-        lightboxArtist.textContent = item.artist ? `Artist: ${item.artist}` : '';
-        lightboxDesc.textContent = desc;
-      }
-
-      function show(i) {
-        current = (i + images.length) % images.length;
-        const item = images[current] || {};
-        mainImgEl.src = item.src || '';
-        mainImgEl.alt = item.alt || `Image ${current + 1}`;
-        lightboxImg.src = item.src || '';
-        lightboxImg.alt = item.alt || `Image ${current + 1}`;
-        updateActiveThumb();
-        updateCaption();
-        preload(current + 1);
-        preload(current - 1);
-      }
-
-      // Controls
-      prevBtn.addEventListener('click', () => show(current - 1));
-      nextBtn.addEventListener('click', () => show(current + 1));
-      lightboxPrev.addEventListener('click', () => show(current - 1));
-      lightboxNext.addEventListener('click', () => show(current + 1));
-
-      openBtn.addEventListener('click', () => {
-        lightbox.showModal();
-        document.body.classList.add('gallery-is-open');
-        closeBtn.focus();
-      });
-
-      function closeLightbox() {
-        if (lightbox.open) lightbox.close();
-      }
-
-      closeBtn.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', (event) => {
-        if (event.target === lightbox) closeLightbox();
-      });
-      lightbox.addEventListener('close', () => {
-        document.body.classList.remove('gallery-is-open');
-        openBtn.focus();
-      });
-
-      // Keyboard support
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-          e.preventDefault();
-          show(current - 1);
-        }
-        if (e.key === 'ArrowRight') {
-          e.preventDefault();
-          show(current + 1);
-        }
-      });
-
-      // Init
-      show(0);
-    })();
-  });
-})();
-
-</script>
-<script src="../script.js"></script>
-
-</body>
-</html>
+        <a href="../socials/" class="button">Check out my socials</a></div></section>
+</main>
+</div>
+<footer class="desktop-footer"><span>© Julian · a little corner of the internet</span><a href="../socials/">say hi ↗</a><span class="footer-note">no visitor counter. you're a person, not a number.</span><a href="#main">back to top ↑</a></footer>
+</div>
+</body></html>

@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A personal collection of things Julian owns, grouped by overcategories like plushies and LEGO sets.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://zehjulianlp.github.io/collection/">
-    <link rel="stylesheet" href="../style.css">
-    <title>Julian's corner - Collection</title>
-    <link rel="icon" href="../img/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Collection — Julian's personal website. Developer, dragon and Minecraft infrastructure nerd.">
+<meta name="theme-color" content="#0b292b">
+<title>Collection · Julian's corner</title>
+<link rel="icon" href="../assets/img/logo.png">
+<link rel="stylesheet" href="../style.css">
+<script src="../app.js" defer></script>
 </head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="https://hiseel.carrd.co/" target="_blank">
-            <img src="../img/logo.png" alt="logo" width="100px" class="logo">
-        </a>
-        </div>
-        <div class="nav">
-            <div class="navitem">
-                <a href="../">Home</a>
-            </div>
-            <div class="navitem">
-                <a href="../about/">About Me</a>
-            </div>
-            <div class="navitem">
-                <a href="../projects/">Projects</a>
-            </div>
-            <div class="navitem selected">
-                <a href="#">Collection</a>
-            </div>
-            <div class="navitem">
-                <a href="../dragon-stuff/">Dragon Stuff</a>
-            </div>
-            <div class="navitem">
-                <a href="../guestbook/">Guestbook</a>
-            </div>
-            <div class="navitem">
-                <a href="../socials/">Social Media</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="header">
-        <h1>My Collection</h1>
-    </div>
-
-    <div id="collection-root"></div>
-
-    <script src="../script.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<body data-page="collection">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="desktop">
+<header class="system-bar"><a href="../" class="system-name"><span aria-hidden="true">✦</span> julianOS <small>/ personal website</small></a><div class="system-actions"><button id="calm-mode" type="button" aria-pressed="false">✧ Calm mode</button><time id="desktop-clock" aria-label="Your local time">--:--</time></div></header>
+<div class="site-masthead"><div><a href="../">Julian's <span>corner</span><span class="pixel-star" aria-hidden="true">✧</span></a><p>a dragon who likes water. and making things.</p></div><span class="masthead-note" aria-hidden="true">somewhere below the surface<br>~ personal space on the web ~</span></div>
+<div class="desktop-layout">
+<aside class="sidebar">
+<section class="window profile-window"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>user.profile</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><a href="../dragon-stuff/" class="avatar-link"><img src="../assets/img/logo.png" width="112" height="112" alt="My blue SeaWing dragon"></a><h2>Hi, I'm Julian.</h2><p class="profile-meta">he / they · <span data-age>22</span> · Germany</p><p>Developer. Dragon.<br>Infrastructure nerd.</p><a class="small-link" href="https://art.hiseel.org/" target="_blank" rel="noopener noreferrer">avatar by Hiseel ↗</a></div></section>
+<nav class="window places-window" aria-label="Main navigation"><div class="titlebar"><span aria-hidden="true">▱</span><span>places</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="nav-links"><a href="../"><span aria-hidden="true">⌂</span>Home</a>
+<a href="../about/"><span aria-hidden="true">☺</span>About me</a>
+<a href="../projects/"><span aria-hidden="true">▱</span>Projects</a>
+<a href="../dragon-stuff/"><span aria-hidden="true">◇</span>Dragon stuff</a>
+<a href="../collection/" aria-current="page"><span aria-hidden="true">▦</span>Collection<span class="nav-arrow" aria-hidden="true">‹</span></a>
+<a href="../now/"><span aria-hidden="true">◷</span>Now</a>
+<a href="../updates/"><span aria-hidden="true">≡</span>Updates</a>
+<a href="../guestbook/"><span aria-hidden="true">✎</span>Guestbook</a>
+<a href="../socials/"><span aria-hidden="true">♡</span>Socials & friends</a><a href="../search/"><span aria-hidden="true">⌕</span>Search<span class="shortcut">Ctrl K</span></a></div></nav>
+<section class="window elsewhere-window"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>elsewhere</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><a class="elsewhere-link" href="https://julianverse.de/" target="_blank" rel="noopener noreferrer">↗ Julianverse.de<small>all the projects & services</small></a><a class="elsewhere-link" href="https://github.com/ZehJulianLp" target="_blank" rel="noopener noreferrer">↗ GitHub<small>code & smaller experiments</small></a></div></section>
+<div class="web-buttons" aria-label="Personal website badges"><a href="../dragon-stuff/" class="web-badge dragon-badge">SEA WING<br><b>AT HEART</b></a><a href="../about/#about-developer" class="web-badge code-badge">HANDMADE<br><b>ON THE WEB</b></a><a href="../guestbook/" class="web-badge guest-badge">LEAVE A<br><b>RAWR! ♡</b></a><a href="../about/#building-values" class="web-badge web-badge-open">OPEN WEB<br><b>SMALL & WEIRD</b></a></div>
+</aside>
+<main id="main" tabindex="-1">
+<div class="location-bar"><span aria-hidden="true">▱</span> home / collection<span class="location-end" aria-hidden="true">✦</span></div>
+<div class="page-heading"><h1>My collection</h1><p>Audiobooks, games, computers, audio gear and things I tinker with.</p></div>
+<nav aria-label="Collection sections"><ul class="collection-jump-links"><li><a href="#audiobooks">Audiobooks</a></li><li><a href="#games">Games</a></li><li><a href="#gear">Gear &amp; hardware</a></li></ul></nav>
+<section id="audiobooks" aria-labelledby="audiobooks-title">
+<div class="section-heading"><h2 id="audiobooks-title">Audiobooks</h2><p id="audiobook-count" class="quiet">My audiobook collection, grouped by theme and series.</p></div>
+<nav aria-label="Audiobook themes"><ul id="audiobook-groups" class="collection-jump-links"></ul></nav>
+<div id="audiobooks-list" aria-busy="true"><p>Loading audiobooks…</p></div>
+</section>
+<section id="games" aria-labelledby="games-title">
+<div class="section-heading"><h2 id="games-title">Games</h2><p id="game-count" class="quiet">Minecraft and my Steam games, grouped by type.</p></div>
+<nav aria-label="Game categories"><ul id="game-groups" class="collection-jump-links"></ul></nav>
+<div id="games-list" aria-busy="true"><p>Loading games…</p></div>
+</section>
+<section id="gear" aria-labelledby="gear-title">
+<div class="section-heading"><h2 id="gear-title">Gear &amp; hardware</h2></div>
+<section class="window"><div class="titlebar"><span class="window-icon" aria-hidden="true">▧</span><span>collection / readme</span><span class="window-decoration" aria-hidden="true">─ □</span></div><div class="window-body"><p>Things I use, things I used to use, and a few project bits. The server lives at Hetzner, not under my desk.</p><p class="quiet">These are product and reference photos from the web, not photos of my own gear. Sources are linked below each item; colours and pictured accessories may differ. Unconfirmed models have labelled example images.</p></div></section>
+<div id="collection" aria-busy="true"><p>Loading collection…</p></div>
+</section>
+</main>
+</div>
+<footer class="desktop-footer"><span>© Julian · a little corner of the internet</span><a href="../socials/">say hi ↗</a><span class="footer-note">no visitor counter. you're a person, not a number.</span><a href="#main">back to top ↑</a></footer>
+</div>
+</body></html>

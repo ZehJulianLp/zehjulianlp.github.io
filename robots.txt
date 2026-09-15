@@ -7,4 +7,4 @@ Disallow: /harming/humans
 Disallow: /ignoring/human/orders
 Disallow: /harm/to/self
 
-Sitemap: https://zehjulianlp.github.io/sitemap.xml
+Sitemap: https://web.julianverse.de/sitemap.xml

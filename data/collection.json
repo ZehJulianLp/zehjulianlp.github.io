@@ -1,0 +1,406 @@
+{
+  "overCategories": [
+    {
+      "id": "computers",
+      "label": "Computers & Core Hardware",
+      "description": "My desktop, the Pi and a machine that lives somewhere else."
+    },
+    {
+      "id": "mobile",
+      "label": "Phones & Mobile",
+      "description": "The phone I use."
+    },
+    {
+      "id": "audio",
+      "label": "Audio",
+      "description": "Headphones, speakers, an interface and my current and older microphones."
+    },
+    {
+      "id": "cameras",
+      "label": "Cameras",
+      "description": "A newer webcam and the old backup."
+    },
+    {
+      "id": "peripherals",
+      "label": "Printers & Weird Peripherals",
+      "description": "Things that don't quite fit on the usual gear list."
+    },
+    {
+      "id": "maker",
+      "label": "Project / Maker Hardware",
+      "description": "NFC experiments, the Raspberry Pi kiosk, and the cables and adapters that accumulate along the way."
+    }
+  ],
+  "categories": [
+    {
+      "id": "desktop",
+      "label": "Desktop",
+      "overCategory": "computers"
+    },
+    {
+      "id": "single-board",
+      "label": "Single-board computer",
+      "overCategory": "computers"
+    },
+    {
+      "id": "server",
+      "label": "Machines I run",
+      "overCategory": "computers"
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "overCategory": "mobile"
+    },
+    {
+      "id": "headphones",
+      "label": "Headphones",
+      "overCategory": "audio"
+    },
+    {
+      "id": "speaker",
+      "label": "Bluetooth speaker",
+      "overCategory": "audio"
+    },
+    {
+      "id": "interface",
+      "label": "Audio interface",
+      "overCategory": "audio"
+    },
+    {
+      "id": "microphone",
+      "label": "Microphone",
+      "overCategory": "audio"
+    },
+    {
+      "id": "webcam",
+      "label": "Webcam",
+      "overCategory": "cameras"
+    },
+    {
+      "id": "printer",
+      "label": "Thermal printer",
+      "overCategory": "peripherals"
+    },
+    {
+      "id": "nfc",
+      "label": "NFC",
+      "overCategory": "maker"
+    }
+  ],
+  "items": [
+    {
+      "title": "Desktop-PC",
+      "overCategory": "computers",
+      "category": "desktop",
+      "status": "My setup",
+      "notes": "My desktop setup with two monitors.",
+      "specs": [
+        "AMD Ryzen 5 3600",
+        "NVIDIA GeForce RTX 3050 · 8 GB",
+        "16 GB RAM",
+        "Two monitors"
+      ],
+      "image": "assets/collection/desktop-pc.jpg",
+      "imageAlt": "Product photo of a black Kolink Stronghold case with a glass side panel.",
+      "imageSource": {
+        "label": "LDLC",
+        "url": "https://www.ldlc.com/en/product/PB00256642.html",
+        "note": "Kolink Stronghold product photo; not a photo of my assembled PC.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Raspberry Pi 4",
+      "overCategory": "computers",
+      "category": "single-board",
+      "status": "In use",
+      "notes": "Runs Debian. Currently used for Julianverse TV / the kiosk, among other things.",
+      "specs": [
+        "Debian",
+        "Julianverse TV / kiosk"
+      ],
+      "image": "assets/collection/raspberry-pi-4.jpg",
+      "imageAlt": "Raspberry Pi 4 Model B board viewed from the side.",
+      "imageSource": {
+        "label": "Michael H. (“Laserlicht”) / Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_4_Model_B_-_Side.jpg",
+        "note": "Reference photo; not my own Pi.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "title": "Hetzner Root-Server",
+      "overCategory": "computers",
+      "category": "server",
+      "status": "Rented · remotely hosted",
+      "notes": "A machine I run, not hardware sitting at home.",
+      "specs": [
+        "AMD Ryzen 5 3600",
+        "Approx. 64 GB RAM"
+      ],
+      "image": "assets/collection/hetzner.jpg",
+      "imageAlt": "View inside a Hetzner data centre, illustrating the remotely hosted server.",
+      "imageSource": {
+        "label": "Hetzner",
+        "url": "https://www.hetzner.com/unternehmen/360-tour/",
+        "note": "Illustrative data-centre image; not my specific server.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Samsung Galaxy A53 5G",
+      "overCategory": "mobile",
+      "category": "phone",
+      "status": "In use",
+      "notes": "My phone.",
+      "specs": [
+        "Samsung Galaxy A53 5G"
+      ],
+      "image": "assets/collection/galaxy-a53.jpg",
+      "imageAlt": "Product image of a Samsung Galaxy A53 5G, front and back.",
+      "imageSource": {
+        "label": "Reset Digitale",
+        "url": "https://www.resetdigitale.it/smartphone-samsung-galaxy-a53-128gb-nero-p92270.html",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "JBL Live 770NC",
+      "overCategory": "audio",
+      "category": "headphones",
+      "status": "Daily driver",
+      "notes": "My current over-ear headphones.",
+      "specs": [],
+      "image": "assets/collection/jbl-live-770nc.webp",
+      "imageAlt": "Product image of black JBL Live 770NC over-ear headphones.",
+      "imageSource": {
+        "label": "Tet",
+        "url": "https://www.tet.lv/veikals/austinas/jbl-live-770nc-black.html",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "JBL 500BT",
+      "overCategory": "audio",
+      "category": "headphones",
+      "status": "Previous daily driver",
+      "retired": true,
+      "notes": "The pair I used before the Live 770NC.",
+      "specs": [],
+      "image": "assets/collection/jbl-500bt.jpg",
+      "imageAlt": "Product image of JBL Tune 500BT headphones.",
+      "imageSource": {
+        "label": "PcComponentes",
+        "url": "https://www.pccomponentes.com/jbl-tune-500bt-auriculares-bluetooth-negro",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Anker Soundcore 2",
+      "overCategory": "audio",
+      "category": "speaker",
+      "status": "In my collection",
+      "notes": "A Bluetooth speaker.",
+      "specs": [],
+      "image": "assets/collection/soundcore-2.jpg",
+      "imageAlt": "Product image of a black Anker Soundcore 2 Bluetooth speaker.",
+      "imageSource": {
+        "label": "Anker Japan",
+        "url": "https://www.ankerjapan.com/products/a3105",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "JBL Go 1",
+      "overCategory": "audio",
+      "category": "speaker",
+      "status": "despawned™",
+      "retired": true,
+      "notes": "Definitely had one. Current whereabouts: the Backrooms, probably.",
+      "specs": [],
+      "image": "assets/collection/jbl-go.jpg",
+      "imageAlt": "Product image of the original JBL Go speaker.",
+      "imageSource": {
+        "label": "Bax Music",
+        "url": "https://www.bax-shop.nl/bluetooth-speakers/jbl-go-black-draagbare-bluetooth-speaker",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Razer BlackShark V2 HyperSpeed",
+      "overCategory": "audio",
+      "category": "headphones",
+      "status": "PC headset",
+      "notes": "Connected to my desktop via USB. Linux calls it “Razer BlackShark V2 HS USB”.",
+      "specs": [
+        "USB connection to my PC"
+      ],
+      "image": "assets/collection/razer-blackshark.webp",
+      "imageAlt": "Product image of a Razer BlackShark V2 HyperSpeed headset.",
+      "imageSource": {
+        "label": "Razer",
+        "url": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-hyperspeed",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "M-Audio M-Track Solo",
+      "overCategory": "audio",
+      "category": "interface",
+      "status": "In my setup",
+      "notes": "My audio interface.",
+      "specs": [],
+      "image": "assets/collection/m-track-solo.png",
+      "imageAlt": "Product image of an M-Audio M-Track Solo audio interface.",
+      "imageSource": {
+        "label": "M-Audio",
+        "url": "https://www.m-audio.com/audio-midi-interfaces/m-track-solo.html",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Shure MV7X",
+      "overCategory": "audio",
+      "category": "microphone",
+      "status": "Current microphone",
+      "notes": "My current microphone.",
+      "specs": [
+        "XLR",
+        "Dynamic microphone"
+      ],
+      "image": "assets/collection/shure-mv7x.jpg",
+      "imageAlt": "Product image of a black Shure MV7X microphone with its mounting yoke.",
+      "imageSource": {
+        "label": "Shure",
+        "url": "https://www.shure.com/en-US/products/microphones/mv7x",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "RØDE NT-USB",
+      "overCategory": "audio",
+      "category": "microphone",
+      "status": "Older gear",
+      "retired": true,
+      "notes": "My older USB microphone.",
+      "specs": [
+        "USB"
+      ],
+      "image": "assets/collection/rode-nt-usb.png",
+      "imageAlt": "Product image of the original RØDE NT-USB microphone.",
+      "imageSource": {
+        "label": "RØDE",
+        "url": "https://rode.com/en/microphones/usb/nt-usb",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Elgato Facecam Neo",
+      "overCategory": "cameras",
+      "category": "webcam",
+      "status": "In my setup",
+      "notes": "Has given me USB connection trouble under Linux.",
+      "specs": [
+        "USB-C"
+      ],
+      "image": "assets/collection/facecam-neo.jpg",
+      "imageAlt": "Product image of a white Elgato Facecam Neo webcam.",
+      "imageSource": {
+        "label": "JB Hi-Fi",
+        "url": "https://www.jbhifi.com.au/products/elgato-facecam-neo",
+        "note": "Product photo; not my own device.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "Old Logitech 720p webcam",
+      "overCategory": "cameras",
+      "category": "webcam",
+      "status": "Backup · still works",
+      "retired": true,
+      "notes": "An older USB-A webcam that still works as a backup. I don't remember the exact model.",
+      "specs": [
+        "USB-A",
+        "Around 720p · exact model unconfirmed"
+      ],
+      "image": "assets/collection/logitech-webcam.png",
+      "imageAlt": "A Logitech C270 webcam as an example; the exact model of my older webcam is unknown.",
+      "imageSource": {
+        "label": "Logitech",
+        "url": "https://www.logitech.com/en-us/products/webcams/c270-hd-webcam.960-000694.html",
+        "note": "Example image: Logitech C270. My exact webcam model is unconfirmed.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "NetumScan 80-mm POS printer",
+      "overCategory": "peripherals",
+      "category": "printer",
+      "status": "Julianverse Print",
+      "notes": "A thermal receipt printer that runs with Julianverse Print.",
+      "specs": [
+        "80-mm thermal paper",
+        "USB",
+        "Ethernet",
+        "ESC/POS"
+      ],
+      "link": "projects/#project-julianverse-print",
+      "linkLabel": "Julianverse Print →",
+      "image": "assets/collection/thermal-printer.jpg",
+      "imageAlt": "Example product image of a NETUM NT-8360 thermal receipt printer.",
+      "imageSource": {
+        "label": "NETUM",
+        "url": "https://www.netum.net/de/products/nt-8360-thermal-printer",
+        "note": "Example image: NT-8360. My exact printer model is not listed.",
+        "license": null,
+        "licenseUrl": null
+      }
+    },
+    {
+      "title": "NFC tags & hardware",
+      "overCategory": "maker",
+      "category": "nfc",
+      "status": "For experiments",
+      "notes": "NFC tags and bits of hardware for R&R Tap and other experiments.",
+      "specs": [
+        "R&R Tap",
+        "NFC experiments"
+      ],
+      "link": "projects/#project-r-r-tap",
+      "linkLabel": "R&R Tap →",
+      "image": "assets/collection/nfc-tag.png",
+      "imageAlt": "A round NFC tag used as an example of the tags in my project hardware.",
+      "imageSource": {
+        "label": "Berndo / Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:NFC_Tag.png",
+        "note": "Example tag; not a photo of my own hardware.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    }
+  ]
+}

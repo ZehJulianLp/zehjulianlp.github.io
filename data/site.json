@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "name": "Julian",
+    "pronouns": "he/they",
+    "birthday": "2003-09-16",
+    "location": "Germany",
+    "description": "Developer, dragon, structure nerd and Minecraft infrastructure architect."
+  },
+  "skills": [
+    "HTML / CSS",
+    "JavaScript",
+    "Python",
+    "Java",
+    "SQL / SQLite",
+    "Docker",
+    "Linux",
+    "Git",
+    "Power BI / Fabric"
+  ],
+  "values": [
+    {
+      "title": "Accessibility",
+      "text": "I want people to be able to use what I build, including with a keyboard or assistive tools."
+    },
+    {
+      "title": "Understandable interfaces",
+      "text": "It should be clear what a button does and what happens next."
+    },
+    {
+      "title": "Self-hosting & privacy",
+      "text": "I like running my own services and keeping control over personal data."
+    },
+    {
+      "title": "Automation",
+      "text": "I write tools for tasks I would otherwise have to keep doing by hand."
+    },
+    {
+      "title": "Maintainability",
+      "text": "I care about structure that I can still understand when I return to a project."
+    },
+    {
+      "title": "Open standards",
+      "text": "I prefer formats and interfaces that can work with other tools."
+    }
+  ],
+  "infrastructure": {
+    "text": "I run self-hosted services using Linux, Docker and nginx. Some live on my own server; smaller hardware projects use a Raspberry Pi.",
+    "stack": [
+      "Linux",
+      "Docker",
+      "nginx",
+      "Own server",
+      "Raspberry Pi"
+    ]
+  },
+  "now": {
+    "updated": "2026-09-14",
+    "building": [
+      {
+        "title": "This website",
+        "text": "Bringing my old pages and project notes into this new little corner.",
+        "href": "index.html"
+      }
+    ],
+    "playing": null,
+    "reading": null,
+    "listening": null
+  },
+  "updates": [
+    {
+      "date": "2026-09-14",
+      "title": "A new home for the website",
+      "text": "The SeaWing’s Den / JulianOS version now brings together my old pages, art gallery, collection and project list.",
+      "href": "index.html"
+    }
+  ],
+  "links": {
+    "hub": "https://julianverse.de/",
+    "github": "https://github.com/ZehJulianLp",
+    "soundcloud": "https://soundcloud.com/zehjulian-lp"
+  },
+  "featured": [
+    "BrickHoard",
+    "ETC Navigator",
+    "Julianverse",
+    "Redstone & Rails"
+  ]
+}

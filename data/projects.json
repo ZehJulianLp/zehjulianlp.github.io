@@ -1,0 +1,537 @@
+[
+  {
+    "title": "BrickHoard",
+    "category": "Web Apps & Tools",
+    "featured": true,
+    "mark": "BH",
+    "description": "I use BrickHoard to sort LEGO sets. It connects to Rebrickable, saves sorting progress and keeps track of missing parts. Projects can be shared with other people.",
+    "status": "Account required",
+    "ownership": "Built by me",
+    "stack": [
+      "JavaScript",
+      "Bootstrap",
+      "Rebrickable API",
+      "PWA"
+    ],
+    "features": [
+      "Live-saved sorting progress",
+      "Missing-parts overview and CSV export",
+      "Shared projects with view or edit access",
+      "Installable app with offline resilience"
+    ],
+    "link": "https://brickhoard.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "ETC Navigator",
+    "category": "Redstone & Rails",
+    "featured": true,
+    "mark": "ETC",
+    "description": "I built a journey planner for the Redstone & Rails network. It covers routes, stations, lines, platforms, accessibility, fares and operating information.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS",
+      "JavaScript",
+      "JSON"
+    ],
+    "features": [
+      "Local route calculation with transfers",
+      "Accessible journey options",
+      "Station, line and platform information",
+      "Operating information and ETC Maps integration",
+      "Fare calculation and network data"
+    ],
+    "link": "https://julianverse.de/etc-navigator/",
+    "linkLabel": "Visit project",
+    "related": [
+      "ETC Maps",
+      "ETC Corporate Design",
+      "Redstone & Rails"
+    ],
+    "github": null
+  },
+  {
+    "title": "Julianverse",
+    "category": "Websites & Community",
+    "featured": true,
+    "mark": "JV",
+    "description": "Julianverse.de is the landing page for my projects and services. It's where I keep the links to the web tools, Minecraft projects and other websites.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS",
+      "JavaScript",
+      "Self-hosting"
+    ],
+    "features": [
+      "Tools and services in one place",
+      "A connected Redstone & Rails ecosystem",
+      "Community projects and experiments",
+      "Links to public and restricted services"
+    ],
+    "link": "https://julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Redstone & Rails",
+    "category": "Redstone & Rails",
+    "featured": true,
+    "mark": "R&R",
+    "description": "Redstone & Rails is a Minecraft transport and infrastructure project I work on with others. I plan networks, build infrastructure and write web tools for the world.",
+    "status": "Community project",
+    "ownership": "Collaborative",
+    "stack": [
+      "Minecraft",
+      "Redstone",
+      "Web tools",
+      "Documentation"
+    ],
+    "features": [
+      "Connected cities and transport networks",
+      "Accessibility and infrastructure standards",
+      "Fictional companies and worldbuilding",
+      "Routing, mapping, administration and ticketing tools",
+      "Redstone engineering, automated subways, elevators and cargo networks",
+      "Signage standards and command block scripting"
+    ],
+    "link": "https://julianverse.de/#rails",
+    "linkLabel": "Visit project",
+    "related": [
+      "ETC Navigator",
+      "ETC Maps",
+      "Redstone & Rails Unternehmensregister",
+      "VBE",
+      "R&R Tap",
+      "Redstone & Rails Wiki",
+      "ETC Corporate Design"
+    ],
+    "github": null,
+    "image": "assets/img/Redstone.png",
+    "communityLink": "https://discord.gg/pzJpThb9pD"
+  },
+  {
+    "title": "Julianverse Startpage",
+    "category": "Web Apps & Tools",
+    "mark": "SP",
+    "description": "My browser start page with search, notes, tasks, news, weather and transport widgets. Personal settings stay in the browser.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "JavaScript",
+      "Browser storage",
+      "RSS",
+      "Open-Meteo",
+      "Ollama"
+    ],
+    "features": [
+      "Customisable widgets and saved profiles",
+      "Search shortcuts, notes and personal tools",
+      "News and transport through the Startpage API",
+      "Optional local Ollama assistant",
+      "Offline caches and personal tools",
+      "Background customisation, command palette and multiple languages",
+      "Search with bang shortcuts and browser data presets"
+    ],
+    "link": "https://julianverse.de/startpage/",
+    "linkLabel": "Visit project",
+    "aliases": [
+      "Startpage",
+      "Startpage API"
+    ],
+    "github": "https://github.com/ZehJulianLp/startpage",
+    "image": "assets/img/startpage.svg"
+  },
+  {
+    "title": "Julianverse Wetter",
+    "category": "Web Apps & Tools",
+    "mark": "°C",
+    "description": "A small weather app using Open-Meteo. It has saved places, hourly and daily forecasts, and can be installed as a PWA.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "JavaScript",
+      "Open-Meteo",
+      "PWA"
+    ],
+    "features": [
+      "Current conditions and forecast trends",
+      "Saved places and configurable units",
+      "English and German interface"
+    ],
+    "link": "https://julianverse.de/weather/",
+    "linkLabel": "Visit project",
+    "aliases": [
+      "Julianverse Weather"
+    ],
+    "github": null
+  },
+  {
+    "title": "UUCC",
+    "category": "Web Apps & Tools",
+    "mark": "⇄",
+    "description": "A tool for converting units and currencies. It also includes smaller calculators, saved conversions and an intentionally silly conversion mode.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS",
+      "JavaScript",
+      "Browser storage"
+    ],
+    "features": [
+      "Unit and currency conversion",
+      "Favourites and conversion history",
+      "Shareable results and specialist calculations"
+    ],
+    "link": "https://julianverse.de/uucc/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "ETC Maps",
+    "category": "Redstone & Rails",
+    "mark": "MAP",
+    "description": "The map application inside ETC Navigator. It shows the world, stations, tracks and infrastructure, including track gauges and power systems.",
+    "status": "Public",
+    "ownership": "Built by me",
+    "stack": [
+      "JavaScript",
+      "OpenLayers",
+      "uNmINeD"
+    ],
+    "features": [
+      "World map with stations, lines and places",
+      "Track, gauge and electrification layers",
+      "Coordinate search and route planning",
+      "Terrain and infrastructure"
+    ],
+    "link": "https://julianverse.de/etc-navigator/karte/",
+    "linkLabel": "Visit project",
+    "related": [
+      "ETC Navigator"
+    ],
+    "github": null,
+    "planned": [
+      "Signals and further infrastructure layers"
+    ]
+  },
+  {
+    "title": "Redstone & Rails Unternehmensregister",
+    "category": "Redstone & Rails",
+    "mark": "AMT",
+    "description": "A company register for Redstone & Rails. It manages organisations, roles and applications, with OAuth and an audit log for administrative changes.",
+    "status": "Public register",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS"
+    ],
+    "features": [
+      "Company and organisation records",
+      "Applications and role management",
+      "Auditable administration",
+      "OAuth"
+    ],
+    "link": "https://amt.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "VBE",
+    "category": "Redstone & Rails",
+    "mark": "VBE",
+    "description": "The website for the Verbund der Bezirkseisenbahnen. It contains the company portal, approvals, infrastructure standards, signal manual and member directory.",
+    "status": "Public portal",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS",
+      "PDF documentation"
+    ],
+    "features": [
+      "Company portal and approval applications",
+      "Vehicle and infrastructure standards",
+      "Member directory and signal manual"
+    ],
+    "link": "https://vbe.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "R&R Tap",
+    "category": "Redstone & Rails",
+    "mark": "TAP",
+    "description": "A web and NFC-based check-in/check-out system connected to Minecraft and the Redstone & Rails fare system.",
+    "status": "In-game setup required",
+    "ownership": "Built by me",
+    "stack": [
+      "NFC",
+      "Web interface",
+      "Minecraft",
+      "Browser storage"
+    ],
+    "features": [
+      "Check-in and check-out",
+      "Device-local setup code",
+      "Optional sound feedback"
+    ],
+    "link": "https://tap.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Redstone & Rails Wiki",
+    "category": "Redstone & Rails",
+    "mark": "WIKI",
+    "description": "Documentation for the Redstone & Rails world: technology, standards, operations, lore and information for people who want to contribute.",
+    "status": "Public documentation",
+    "ownership": "Collaborative",
+    "stack": [
+      "Material for MkDocs",
+      "Documentation"
+    ],
+    "features": [
+      "Network and operations documentation",
+      "Accessibility and design standards",
+      "Lore, history and contribution guides"
+    ],
+    "link": "https://julianverse.de/wiki/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "ETC Corporate Design",
+    "category": "Redstone & Rails",
+    "mark": "Aa",
+    "description": "The design rules for the Edenford Transit Company: logos, typography, line colours, maps, motion and sound. I like working on this side of a project too.",
+    "status": "Public design manual",
+    "ownership": "Built by me",
+    "stack": [
+      "HTML/CSS",
+      "ETC Font",
+      "Motion & sound design"
+    ],
+    "features": [
+      "Logo and typography rules",
+      "Line identities and colour system",
+      "Map, motion and sound guidelines"
+    ],
+    "link": "https://julianverse.de/etc-design/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Minigames",
+    "category": "Websites & Community",
+    "mark": "PLAY",
+    "description": "A Minecraft minigames server with BedWars, TNTWars, SurvivalGames, KitFFA, Jump & Run and other modes. Game logic uses commands and datapacks.",
+    "status": "Public server",
+    "ownership": "Built by me",
+    "stack": [
+      "Minecraft Java Edition",
+      "Datapacks",
+      "Commands"
+    ],
+    "features": [
+      "Multiple competitive and casual modes",
+      "Lobbies, parties and player statistics",
+      "Quests, cosmetics and progression"
+    ],
+    "link": "https://julianverse.de/minigames/",
+    "linkLabel": "Visit project",
+    "aliases": [
+      "Minigames Server"
+    ],
+    "github": null,
+    "image": "assets/img/commandblock.png"
+  },
+  {
+    "title": "Dwarslooper",
+    "category": "Websites & Community",
+    "mark": "DW",
+    "description": "A community website with a pretend cardboard-cutout shop, EmeraldFlip, RedstoneBank and other R&R-related features. I wrote the website; Mixel did the design.",
+    "status": "Public experiment",
+    "ownership": "Collaborative",
+    "stack": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Fictional shop and cart",
+      "EmeraldFlip and RedstoneBank",
+      "Community humour and worldbuilding"
+    ],
+    "link": "https://julianverse.de/dwarslooper-pappaufsteller/",
+    "linkLabel": "Visit project",
+    "aliases": [
+      "Dwarslooper Pappaufsteller Website"
+    ],
+    "github": null
+  },
+  {
+    "title": "Steinwasser",
+    "category": "Experiments & Weird Stuff",
+    "mark": "SW",
+    "description": "A parody website for a fictional luxury water brand. It has product editions and a waiting list. The water is not a real product.",
+    "status": "Public experiment",
+    "ownership": "Built by me",
+    "stack": [
+      "Website",
+      "Brand design"
+    ],
+    "features": [
+      "Fictional premium product editions",
+      "Luxury-brand parody",
+      "Campaign and product storytelling"
+    ],
+    "link": "https://steinwasser.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Julianverse Search",
+    "category": "Infrastructure & Services",
+    "mark": "?",
+    "description": "My self-hosted SearXNG instance. It combines search results from several sources.",
+    "status": "Public service",
+    "ownership": "Self-hosted service",
+    "stack": [
+      "SearXNG",
+      "Self-hosting"
+    ],
+    "features": [
+      "Metasearch across multiple sources",
+      "A dedicated search service"
+    ],
+    "link": "https://search.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Julianverse Cloud",
+    "category": "Infrastructure & Services",
+    "mark": "CL",
+    "description": "An ownCloud instance I run for file storage. Access is restricted.",
+    "status": "Restricted access",
+    "ownership": "Self-hosted service",
+    "stack": [
+      "ownCloud",
+      "Self-hosting"
+    ],
+    "features": [
+      "File storage",
+      "Account-based access"
+    ],
+    "link": "https://cloud.julianverse.de/",
+    "linkLabel": "Visit project",
+    "github": null
+  },
+  {
+    "title": "Julianverse Print",
+    "category": "Hardware & Experiments",
+    "description": "A web app for an 80-mm thermal printer connected through the network. It runs on a Raspberry Pi and sends print jobs using ESC/POS.",
+    "ownership": "Built by me",
+    "status": "Local project",
+    "stack": [
+      "Raspberry Pi",
+      "ESC/POS",
+      "Network printing"
+    ],
+    "features": [
+      "Web-based printing",
+      "80-mm thermal printer",
+      "Raspberry Pi"
+    ],
+    "link": null,
+    "mark": "PR"
+  },
+  {
+    "title": "Alterhumania",
+    "description": "A German-speaking community for Alterhumans, Therians, Otherkin, Fictionkin and people who are curious about these identities.",
+    "image": "assets/img/pets.png",
+    "link": "https://discord.gg/kDKa5NV2tf",
+    "ownership": "Community project",
+    "status": "Community",
+    "stack": [],
+    "features": [
+      "Identity, discussion and creativity"
+    ],
+    "category": "Websites & Community",
+    "featured": false,
+    "mark": "AL"
+  },
+  {
+    "title": "TheJoCraft",
+    "description": "I moderate TheJoCraft's Twitch chat. He is a German-speaking streamer who plays Minecraft and other games.",
+    "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/449e0a0a-3400-4370-829c-3c93a111ba82-profile_image-150x150.png",
+    "link": "https://www.twitch.tv/thejocraft_live",
+    "ownership": "Moderator",
+    "status": "Community contribution",
+    "stack": [
+      "Twitch"
+    ],
+    "features": [
+      "Chat moderation"
+    ],
+    "category": "Websites & Community",
+    "featured": false,
+    "mark": "TH"
+  },
+  {
+    "title": "Cactus Mod",
+    "description": "I contribute to Cactus Mod, including German translations. I used to moderate its community and still help occasionally. The mod adds redstone and creative utilities to Minecraft.",
+    "image": "https://cactusmod.xyz/static/icon.webp",
+    "link": "https://cactusmod.xyz/",
+    "ownership": "Contributor",
+    "status": "Occasional contributions",
+    "stack": [
+      "Minecraft",
+      "Localisation"
+    ],
+    "features": [
+      "German translations",
+      "Community moderation"
+    ],
+    "category": "Websites & Community",
+    "featured": false,
+    "mark": "CA"
+  },
+  {
+    "title": "Github Projects",
+    "description": "My GitHub profile also contains smaller projects, including datapacks and Python scripts.",
+    "image": "assets/img/gitlogo.png",
+    "link": "https://github.com/ZehJulianLp",
+    "ownership": "Built by me",
+    "status": "Public repositories",
+    "stack": [
+      "Python",
+      "Minecraft datapacks"
+    ],
+    "features": [
+      "Scripts and smaller projects"
+    ],
+    "category": "Web Apps & Tools",
+    "featured": false,
+    "mark": "GI"
+  },
+  {
+    "title": "MCTorn",
+    "description": "A Minecraft MMORPG I co-developed with friends from 2020 to 2024. It focused on worldbuilding and quests. The project is no longer active.",
+    "image": "assets/img/tornlogo.png",
+    "link": "https://sites.google.com/view/mctorn",
+    "cancelled": true,
+    "ownership": "Collaborative",
+    "status": "Archived · 2020–2024",
+    "stack": [
+      "Kotlin",
+      "Minecraft"
+    ],
+    "features": [
+      "Worldbuilding",
+      "Quests"
+    ],
+    "category": "Archive",
+    "featured": false,
+    "mark": "MC"
+  }
+]

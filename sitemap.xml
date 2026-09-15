@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zehjulianlp.github.io/</loc>
+    <loc>https://web.julianverse.de/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zehjulianlp.github.io/about/</loc>
+    <loc>https://web.julianverse.de/about/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zehjulianlp.github.io/projects/</loc>
+    <loc>https://web.julianverse.de/projects/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zehjulianlp.github.io/collection/</loc>
+    <loc>https://web.julianverse.de/collection/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zehjulianlp.github.io/dragon-stuff/</loc>
+    <loc>https://web.julianverse.de/dragon-stuff/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zehjulianlp.github.io/socials/</loc>
+    <loc>https://web.julianverse.de/socials/</loc>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://web.julianverse.de/now/</loc></url>
+  <url><loc>https://web.julianverse.de/updates/</loc></url>
+  <url><loc>https://web.julianverse.de/guestbook/</loc></url>
+  <url><loc>https://web.julianverse.de/search/</loc></url>
 </urlset>
