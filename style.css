@@ -141,6 +141,10 @@ blockquote { font-family: Georgia, serif; font-size: 19px; font-style: italic; l
 .log-entry h2, .log-entry h3 { font-size: 16px; margin-bottom: 8px; }
 .desktop-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; margin-top: 32px; padding: 17px 2px 24px; border-top: 1px dashed #3b5b53; color: #91ad9e; font: 10px/1.7 "Courier New", monospace; }
 .desktop-footer > a:last-child { margin-left: auto; }
+.footer-legal { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.legal-content .page-heading h1 { overflow-wrap: anywhere; }
+.legal-content address { font-style: normal; margin-bottom: 16px; }
+.legal-content a, .legal-content code { overflow-wrap: anywhere; }
 .footer-note { color: #708f85; }
 .page-heading { margin: 22px 0 25px; }
 .page-heading p { color: #abc1b3; font-size: 13px; }

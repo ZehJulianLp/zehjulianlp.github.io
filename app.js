@@ -484,8 +484,10 @@
     root.setAttribute("aria-busy", "false"); requestAnimationFrame(jumpToHash);
   }).catch(() => reportError($("#socials-main"), "The social links couldn't be loaded."));
 
+  if (page === "guestbook") $("#unload-guestbook").addEventListener("click", () => window.location.reload());
   if (page === "guestbook") $("#load-guestbook").addEventListener("click", event => {
     const button = event.currentTarget; button.disabled = true;
+    $("#unload-guestbook").hidden = false;
     const script = document.createElement("script"); script.src = "https://giscus.app/client.js"; script.async = true; script.crossOrigin = "anonymous";
     const config = { repo: "ZehJulianLp/zehjulianlp.github.io", "repo-id": "R_kgDOHAxhiA", category: "Guestbook", "category-id": "DIC_kwDOHAxhiM4CuBBC", mapping: "specific", term: "/guestbook/", strict: "0", "reactions-enabled": "1", "emit-metadata": "0", "input-position": "bottom", theme: "dark", lang: "en" };
     Object.entries(config).forEach(([key, value]) => script.setAttribute("data-" + key, value));
@@ -508,7 +510,7 @@
     socials?.socials.forEach(s => entries.push({ title: s.title, source: "Socials", text: s.description, url: "socials/#social-" + slug(s.title) }));
     socials?.friends.forEach(f => entries.push({ title: f.title, source: "Friends", text: f.link, url: "socials/#friend-" + slug(f.title) }));
     site?.updates.forEach(u => entries.push({ title: u.title, source: "Updates", text: u.date + " " + u.text, url: "updates/" }));
-    const pages = ["about/", "dragon-stuff/", "guestbook/", "now/"];
+    const pages = ["about/", "dragon-stuff/", "guestbook/", "now/", "impressum/", "datenschutz/"];
     const html = await Promise.allSettled(pages.map(async path => {
       const response = await fetch(href(path)); if (!response.ok) throw new Error(path);
       const document = new DOMParser().parseFromString(await response.text(), "text/html");

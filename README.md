@@ -17,7 +17,7 @@ selbst als Webroot verwendet werden; interne Links und Assets sind relativ.
 ## Seiten und Inhalte
 
 Home, About, Projects, Dragon stuff, Collection, Now, Updates,
-Guestbook, Socials & friends, Search und eine 404-Seite.
+Guestbook, Socials & friends, Search, Impressum, Datenschutzerklärung und eine 404-Seite.
 
 - Texte aus About und Dragon stuff sowie Artwork und Künstlernachweise übernommen.
 - 24 Projekte: bisherige Einträge plus Julians Projektliste, mit Kategorien,
@@ -51,6 +51,8 @@ Guestbook, Socials & friends, Search und eine 404-Seite.
   begrenzte Bildfläche, Pfeiltasten, Escape und Fokus-Rückgabe.
 - Gästebuch lädt Giscus erst auf Knopfdruck; bestehendes Repository und
   Kategorie bleiben erhalten, die Zuordnung verwendet /guestbook/.
+  Der Datenschutzhinweis steht vor dem Laden. „Unload guestbook“ lädt die Seite
+  ohne Einbindung neu; es wird keine dauerhafte Lade-Einwilligung gespeichert.
 - Calm mode ist eine lokale Darstellungspräferenz. Kein Tracking.
 - Eigener statischer 88×31-PNG-Button unter Socials & friends / Link back:
   vorhandener Drachenavatar, pixelgenaue Schrift und Farben des Indie-Entwurfs.
@@ -85,6 +87,14 @@ Guestbook, Socials & friends, Search und eine 404-Seite.
   `node scripts/render-button.mjs` neu rendern (Node.js und ImageMagick nötig).
 - `assets/img/`: ursprüngliche Bilder; `assets/collection/`: Gerätebilder.
 - `CNAME`, `robots.txt` und `sitemap.xml`: Domain und Suchmaschinen-Verweise.
+- `impressum/index.html` und `datenschutz/index.html`: Rechtliche Hinweise im
+  bestehenden Design, auf jeder Seite auch ohne JavaScript im Footer erreichbar.
+  Beide Seiten sind auf Englisch, mit `noindex, follow` ausgezeichnet und nicht
+  in der Sitemap enthalten. Die URLs und Abschnittsanker bleiben unverändert.
+  Betreiberangaben aus https://julianverse.de/impressum/ (Stand 29.09.2026).
+  Die Datenschutzerklärung beschreibt diesen GitHub-Pages-Auftritt, nicht alle
+  Julianverse-Dienste. Bei Änderungen an Hosting, Einbindungen oder Speicherzugriffen
+  anpassen und rechtlich prüfen lassen; es ist keine Zusicherung rechtlicher Vollständigkeit.
 - `img/`: bisherige Bildadressen bleiben für vorhandene externe Links erreichbar.
   Die neue Website verwendet `assets/img/`.
 
